@@ -44,7 +44,7 @@ body {
 
 .navbar-expand .navbar-nav.nav-small {
     @media (max-width: 1023px) {
-        flex-direction: column;
+        display: block;
     }
 }
 
@@ -92,6 +92,9 @@ nav {
     background-position: right;
     background-blend-mode: overlay;
     background-size: contain;
+    @media(max-width:1023px) {
+        margin-top:25%;
+    }
     .logo-container {
         img {
             width: 90%;
@@ -103,6 +106,9 @@ nav {
         flex-direction: row;
         justify-content: space-evenly;
         margin-top: 5%;
+        @media (max-width:1023px) {
+            display: block;
+        }
     }
     i.fas {
         display: flex;
@@ -255,8 +261,22 @@ nav {
             color: #fff;
             text-transform: uppercase;
             letter-spacing: 10px;
+            @media (max-width:1023px) {
+               padding:0 4%; 
+    transform: translate(-50%, 25%);
+            }
+            
             h1 {
                 font-family: "ITC Lubalin Graph Std";
+                @media (max-width:1023px) {
+                    font-size: 1.3rem;
+                    line-height:1.3;
+                }
+            }
+            h5 {
+              @media (max-width:1023px) {
+                    font-size: 0.65rem;
+                }  
             }
         }
 
@@ -450,6 +470,7 @@ footer {
         width: 100%
     }
     .footer-content {
+        position: relative;
         color: #fff;
         background-image: url('../images/footer-bg.jpg');
         background-repeat: no-repeat;
@@ -459,25 +480,88 @@ footer {
         height: 400px;
         width: 100%;
     }
+    
+    .footer-green {
+        position: absolute;
+        top:20%;
+        width: 100%;
+        background: #8dd2cc;
+        padding:0.5% 0;
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        @media (max-width:1023px) {
+            display: block;
+        }
+        .footer-green-items a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+            min-width:250px;
+            color:#fff;
+            text-decoration: none;
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+            img {
+                width:14%;
+                margin-right:2%;
+            }
+            i.fas.fa-address-book {
+                font-size:2.3rem;
+                margin-right:5%;
+         
+            }
+            p {
+                margin:0;
+                letter-spacing: 10px;
+//                &:nth-child(2) {
+//                    width:100px;
+//                }
+            }
+        }
+        @media (max-width:1023px) { top:27%}
+    }
     .footer-left {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
+        position: absolute;
+        top:0;
+        left:0;
+        transform: translate(20%, 180%);
+        @media (max-width:1023px) {
+            flex-direction: column;
+            text-align: center;
+           transform: translate(0,0);
+            
+        }
         .logo-masterdev img {
             width: 100%;
             margin-bottom: 11%;
+            @media (max-width:1023px) {
+               margin-bottom:15%;
+            }
         }
+        
     }
     .footer-right {
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: center;
-        margin-top: 3%;
-        margin-left: 27%;
+        position: absolute;
+        top:0;
+        right:0;
+        transform: translate(0, 270%);
         img {
-            width: 12%;
+            width: 10%;
+        }
+        @media (max-width:1023px) {
+           display: block;
+            text-align: center;
+            transform: translate(0,350%);
         }
     }
     p.text-footer {
@@ -490,3 +574,21 @@ footer {
         }
     }
 }
+
+//animation
+.rotate-animation {
+                  -webkit-transition: 5s linear;
+    -moz-transition:  5s linear;
+    transition:  3s linear;
+                &:hover {
+      -webkit-transform: rotateY(360deg);
+      -moz-transform: rotateY(360deg);
+      transform: rotateY(360deg);
+  } 
+}
+   .out {
+   animation-name: out;
+   animation-duration:2s;
+
+}
+//animation end
