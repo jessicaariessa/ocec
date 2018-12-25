@@ -564,41 +564,127 @@ nav {
         .input-group.date {
             padding: 0;
         }
-        span.input-group-append {}
         .fas.fa-search:before {
             color: #7d716d;
         }
     }
-    .experts-container {
+    .expert-title {
+        height: 50px;
+        background: #a19996;
+        color: #fff;
+        h4 {
+            margin: 0;
+            padding: 1% 2%;
+            background: #8687c2;
+            width: 50%;
+            height: 100%;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+    }
+    .expert-image img {
+        width: 100%;
+    }
+    .expert-detail {
         width: 100%;
         background: #2c2d2d;
-        padding: 2% 6% 6% 7%;
-        .experts-text {
-            color: #fff;
-            h6 {
+        padding: 7% 6% 6% 7%;
+        color: #fff;
+        height: 115px;
+        h5 {
+            font-family: "ITC Lubalin Graph Std";
+            text-transform: uppercase;
+        }
+        p {
+            margin: 0;
+            max-width: 220px;
+        }
+    }
+    .expert-contact {
+        display: flex;
+        flex-direction: column;
+        @media (max-width: 1023px) {
+            flex-direction: row;
+        }
+        a i.fas.fa-phone {
+            background: #a19996;
+            padding: 18% 11% 3% 16%;
+            color: #2c2d2d;
+            font-size: 1.1rem;
+            width: 100%;
+            border-radius: 50%;
+            height: 27px;
+            @media (max-width: 1023px) {
+                height: 23px;
+                width: 9%;
+                padding: 2% 0 0 1.5%;
+                font-size: 0.85rem;
+                margin: 5% 5% 0 0;
+            }
+        }
+        a i.fas.fa-envelope {
+            color: #a19996;
+            font-size: 1.6rem;
+            margin-top: 35%;
+            @media(max-width: 1023px) {
+                color: #a19996;
+                font-size: 1.3rem;
+                margin-top: 6%;
+            }
+        }
+    }
+    .event-detail-extension {
+        border: 1px solid #2c2d2d;
+        display: none;
+        .event-detail-extension-title {
+            background: #2d3b46;
+            display: none;
+            h2 {
+                margin: 0;
+                padding: 2% 2% 1% 2%;
                 font-family: "ITC Lubalin Graph Std";
+                letter-spacing: 10px;
                 text-transform: uppercase;
             }
+        }
+        .event-detail-extension-images img {
+            width: 100%
+        }
+        .event-detail-extension-content {
+            padding: 0 4%;
+            h3 {
+                color: #7d716d;
+                text-align: center;
+            }
+            p {
+                color: #2c2d2d;
+
+            }
+            img.image-additional {
+                width: 100%;
+            }
+        }
+        .button-detail-event {
+            background: #2d3b46;
+            padding: 6%;
             p {
                 margin: 0;
-                max-width: 220px;
+                color: #fff;
+                letter-spacing: 1px;
             }
         }
-        .experts-contact {
-            display: flex;
-            flex-direction: column;
-            i.fas.fa-phone {
-                background: #a19996;
-                padding: 30%;
-                width: 100%;
-                border-radius: 100%;
-                color: #2c2d2d;
-                font-size: 1.3rem;
-            }
-            i.fas.fa-envelope {
-                color: #a19996;
-            }
+        a {
+            text-decoration: none;
         }
+        a:hover .button-detail-event {
+            background: #8dd2cc;
+        }
+    }
+    .event-buttons {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
     }
 }
 
