@@ -324,6 +324,7 @@ nav {
         }
         p span {
             color: #8dd2cc;
+            cursor: pointer;
         }
     }
 
@@ -614,6 +615,11 @@ nav {
             width: 100%;
             border-radius: 50%;
             height: 27px;
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
             @media (max-width: 1023px) {
                 height: 23px;
                 width: 9%;
@@ -638,13 +644,20 @@ nav {
         display: none;
         .event-detail-extension-title {
             background: #2d3b46;
-            display: none;
+            position: relative;
             h2 {
                 margin: 0;
                 padding: 2% 2% 1% 2%;
                 font-family: "ITC Lubalin Graph Std";
                 letter-spacing: 10px;
                 text-transform: uppercase;
+            }
+            i.fas.fa-times {
+                position: absolute;
+                right: 2%;
+                top: 25%;
+                font-size: 2rem;
+                color: #fff;
             }
         }
         .event-detail-extension-images img {
@@ -664,27 +677,68 @@ nav {
                 width: 100%;
             }
         }
-        .button-detail-event {
-            background: #2d3b46;
-            padding: 6%;
-            p {
-                margin: 0;
-                color: #fff;
-                letter-spacing: 1px;
-            }
-        }
-        a {
-            text-decoration: none;
-        }
-        a:hover .button-detail-event {
-            background: #8dd2cc;
-        }
+
     }
     .event-buttons {
         position: absolute;
         width: 100%;
         bottom: 0;
         left: 0;
+        .button-detail-event {
+            background: #2d3b46;
+            padding: 1% 4%;
+            height: 50px;
+            &:hover {
+                background: #8dd2cc;
+                color: #fff;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                text-decoration: none;
+                color: #fff;
+                width: 100%;
+                &:hover {
+                    color: #fff;
+                }
+
+                i.fas.fa-phone {
+                    background: #8dd2cc;
+                    padding: 3%;
+                    border-radius: 50%;
+                    height: 100%;
+                    width: 25px;
+                    margin: 5%;
+                    color: #2d3b46;
+                    font-size: 0.75rem;
+                    -moz-transform: scale(-1, 1);
+                    -webkit-transform: scale(-1, 1);
+                    -o-transform: scale(-1, 1);
+                    -ms-transform: scale(-1, 1);
+                    transform: scale(-1, 1);
+                    &:hover {
+                        background: #2d3b46;
+                        color: #fff;
+                    }
+                }
+                i.fas.fa-calendar-alt {
+                    color: #8dd2cc;
+                    font-size: 1.5rem;
+                    margin-right: 5%;
+                    padding: 5% 3%;
+                    width: 25px;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            p {
+                margin: 0;
+                color: #fff;
+                letter-spacing: 1px;
+            }
+        }
     }
 }
 
