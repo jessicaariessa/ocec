@@ -4,10 +4,10 @@
     font-family: "ITC Lubalin Graph Std";
     src: url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.eot");
     src: url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.svg#ITC Lubalin Graph Std") format("svg");
+    url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.svg#ITC Lubalin Graph Std") format("svg");
 }
 
 @import url(//db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=Museo+Sans+500);
@@ -16,10 +16,10 @@
     font-family: "Museo Sans 500";
     src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot");
     src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.svg#Museo Sans 500") format("svg");
+    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.svg#Museo Sans 500") format("svg");
 }
 
 
@@ -75,6 +75,10 @@ i p {
     @media (max-width: 767px) {
         margin-bottom: 5%;
     }
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 .nav-small {
