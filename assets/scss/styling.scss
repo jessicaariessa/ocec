@@ -10,24 +10,24 @@
     url("//db.onlinewebfonts.com/t/2dcae3dc9c06f6dba5fbcec9e0257ac5.svg#ITC Lubalin Graph Std") format("svg");
 }
 
-@import url(//db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=Museo+Sans+500);
 
-@font-face {
-    font-family: "Museo Sans 500";
-    src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot");
-    src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot?#iefix") format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff2") format("woff2"),
-    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff") format("woff"),
-    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.ttf") format("truetype"),
-    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.svg#Museo Sans 500") format("svg");
-}
+@import 'base';
 
-
-
+//@import url(//db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=Museo+Sans+500);
+//
+//@font-face {
+//    font-family: "museo_sans500";
+//    src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot");
+//    src: url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.eot?#iefix") format("embedded-opentype"),
+//    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff2") format("woff2"),
+//    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.woff") format("woff"),
+//    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.ttf") format("truetype"),
+//    url("//db.onlinewebfonts.com/t/16697a764b01cdcc691b05f001046bc3.svg#museo_sans500") format("svg");
+//}
 body {
     padding: 0;
     margin: 0;
-    font-family: "Museo Sans 500";
+    font-family: "museo_sans500";
     font-size: 0.75rem;
     width: 100%;
 }
@@ -57,7 +57,7 @@ h5 {
 }
 
 i p {
-    font-family: "Museo Sans 500";
+    font-family: "museo_sans500";
 }
 
 .starter-template {
@@ -99,15 +99,19 @@ nav {
             margin-bottom: 0;
         }
 
+        img {
+            width: 12%;
+            margin-right: 4%;
+        }
+
         &.phone {
             display: flex;
-
+            justify-content: center;
+            flex-direction: inherit;
+            align-items: center;
+            width: 150px;
             @media (max-width: 1023px) {
                 justify-content: center;
-            }
-
-            .fa-phone:before {
-                line-height: 15px;
             }
         }
     }
@@ -115,10 +119,11 @@ nav {
     input.form-control {
         border: 1px solid #fff;
         border-radius: 0.5rem;
-        font-family: "Museo Sans 500";
+        font-family: "museo_sans500";
         text-transform: uppercase;
         font-size: 0.7rem;
         letter-spacing: 2px;
+        text-align: center;
     }
 
     button.btn-outline-secondary {
@@ -127,9 +132,15 @@ nav {
         border-radius: 0.5rem;
     }
 
-    .socmed-nav {
+    .socmed-nav a {
         color: #fff;
         font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+
+        &:hover {
+            color: #a19996;
+        }
 
         @media (max-width: 1023px) {
             display: flex;
@@ -150,6 +161,24 @@ nav {
     .nav-search {
         @media (max-width: 767px) {
             margin-bottom: 3%;
+        }
+        &.col-lg-2 {
+            max-width: 13.666667%;
+        }
+    }
+
+    img.whatson-icon {
+        width: 50%;
+    }
+
+    .mobile-menu,
+    .mobile-search {
+        display: none;
+        @media (max-width: 767px) {
+            display:initial;
+            font-size: 2rem;
+            color: #fff;
+            margin-left: 5%;
         }
     }
 }
@@ -185,53 +214,55 @@ nav {
     }
 
     ul.navbar-nav.menu-nav-below {
+        display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
-        margin-top: 5%;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 4%;
 
         @media (max-width: 1023px) {
             margin-top: 10%;
             margin-bottom: 3%;
+            justify-content: center;
+
+        }
+
+        a.nav-link {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
         }
     }
 
-    i.fas {
+    img {
+        width: 20%;
         display: flex;
-        color: #8dd2cc;
-        text-transform: uppercase;
+        flex-direction: column;
+        margin-right: 4%;
+    }
+
+    p {
+        font-family: "museo_sans500";
         font-size: 1.2rem;
-        letter-spacing: 2px;
+        color: #fff;
+        margin: 0;
 
         @media (max-width: 1023px) {
             font-size: 0.8rem;
+            padding: 0;
         }
+    }
 
-        &.fa-users:before,
-        &.fa-plane-departure:before,
-        &.fa-edit:before {
-            margin-right: 5%;
-        }
-
-        p {
-            font-family: "Museo Sans 500";
-            font-size: 1.2rem;
-            color: #fff;
-            margin: 0;
-
-            @media (max-width: 1023px) {
-                font-size: 0.8rem;
-                padding: 0;
-            }
+    .whatson-nav {
+        width: 275px;
+        img {
+            width: 27%;
         }
     }
 }
 
 .header-nav li.nav-item:first-child p {
-    width: 140px;
-
-    @media (max-width: 1023px) {
-        width: 95px;
-    }
+    width: inherit;
 }
 
 
@@ -445,6 +476,9 @@ nav {
             font-family: "ITC Lubalin Graph Std";
             text-transform: uppercase;
             letter-spacing: 10px;
+            @media (min-width: 767px) and (max-width:1023px) {
+                letter-spacing: 5px;
+            }
         }
 
         p {
@@ -456,12 +490,20 @@ nav {
             cursor: pointer;
         }
     }
-
-    .view-all-events p {
-        text-align: center;
-        color: #000;
-    }
 }
+
+.view-all a:hover {
+    text-decoration: none;
+}
+
+.view-all p {
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+
 
 #frontpage {
     .homepage-slider {
@@ -635,10 +677,18 @@ nav {
         }
     }
 
+    .news-updates-container .col-md-8,
+    .news-updates-container .col-md-4 {
+        padding-right: 4px;
+        padding-left: 4px;
+    }
+
     .latest-news {
         background: #8687c2;
         height: 310px;
-        padding: 3% 4%;
+        padding: 3% 5%;
+        font-family: "ITC Lubalin Graph Std";
+        letter-spacing: 5px;
 
         .news-preview {
             background: #fff;
@@ -654,7 +704,9 @@ nav {
     .tweets-stream {
         background: #8687c2;
         height: 310px;
-        padding: 6% 7%;
+        padding: 6% 10%;
+        font-family: "ITC Lubalin Graph Std";
+        letter-spacing: 5px;
 
         h4 {
             color: #fff;
@@ -755,6 +807,11 @@ nav {
         .fas.fa-search:before {
             color: #7d716d;
         }
+    }
+
+
+    .col-12.expert {
+        padding: 0 4px;
     }
 
     .expert-title {
@@ -1196,24 +1253,28 @@ footer {
 
         &__left {
             left: 0;
-            transform: translate(12%, 180%);
+            transform: translate(14%, 298%);
 
             @media (max-width: 767px) {
                 flex-direction: column;
                 text-align: center;
-                transform: translate(0, 120%);
+                transform: translate(0, 150%);
             }
 
             @media (min-width:768px) and (max-width:1023px) {
-                transform: translate(12%, 310%);
+                transform: translate(0, 265%);
+
+                flex-direction: column;
+                text-align: center;
             }
 
             .logo-masterdev img {
                 width: 100%;
-                margin-bottom: 11%;
+                margin-bottom: 6%;
 
                 @media (max-width: 767px) {
                     margin-top: 10%;
+                    margin-bottom: 11%;
                 }
             }
         }
@@ -1229,25 +1290,28 @@ footer {
             @media (max-width:767px) {
                 display: block;
                 text-align: center;
-                transform: translate(0, 465%);
+                transform: translate(0, 525%);
             }
 
             @media (min-width:768px) and (max-width:1023px) {
-                transform: translate(0, 650%);
+                transform: translate(0, 735%);
             }
         }
     }
 
     p.text-footer {
         letter-spacing: 3px;
+        font-size: 0.65rem;
 
         &__ownership {
-            width: 300px;
-
+            width: 52%;
+            line-height: 2;
+            margin-left: 3%;
             @media (max-width: 767px) {
                 width: 100%;
                 padding: 0 5%;
                 margin-top: 3%;
+                margin-left: 0;
             }
         }
 
@@ -1288,3 +1352,10 @@ footer {
 }
 
 //animation end
+//bootstrap
+.col-md-4 {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+//bootstrap end
