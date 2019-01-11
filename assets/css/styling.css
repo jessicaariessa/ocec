@@ -84,6 +84,30 @@ a:hover {
   }
 }
 
+.wrap-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+.navbar-dark .navbar-toggler-icon {
+  position: relative;
+  background-image: none;
+  display: initial;
+}
+.navbar-dark .navbar-toggler-icon:before {
+  font-family: "Font Awesome 5 Free";
+  content: "";
+  font-weight: 900;
+}
+
 nav {
   background: #2d3b46;
 }
@@ -94,6 +118,23 @@ nav a.nav-link {
 }
 nav a.nav-link p {
   margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  nav a.nav-link p {
+    font-size: 1rem;
+    padding: 2%;
+  }
+}
+@media (max-width: 767px) {
+  nav a.nav-link p.ph-number {
+    font-size: 0.65rem;
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  nav a.nav-link p.ph-number {
+    display: none;
+  }
 }
 nav a.nav-link img {
   width: 12%;
@@ -106,9 +147,16 @@ nav a.nav-link.phone {
   align-items: center;
   width: 150px;
 }
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   nav a.nav-link.phone {
-    justify-content: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+@media (max-width: 360px) {
+  nav a.nav-link.phone img {
+    width: 20%;
+    margin-right: 0;
   }
 }
 nav input.form-control {
@@ -125,19 +173,21 @@ nav button.btn-outline-secondary {
   background: #fff;
   border-radius: 0.5rem;
 }
-nav .socmed-nav a {
-  color: #fff;
+nav .socmed-nav {
   font-size: 1.1rem;
   display: flex;
   align-items: center;
+  flex-direction: row;
+}
+nav .socmed-nav a {
+  color: #fff;
 }
 nav .socmed-nav a:hover {
   color: #a19996;
 }
-@media (max-width: 1023px) {
-  nav .socmed-nav a {
-    display: flex;
-    justify-content: center;
+@media (max-width: 767px) {
+  nav .socmed-nav {
+    position: inherit;
   }
 }
 nav .navigation-position {
@@ -161,17 +211,21 @@ nav .nav-search.col-lg-2 {
 nav img.whatson-icon {
   width: 50%;
 }
-nav .mobile-menu,
+nav .mobile-only,
 nav .mobile-search {
   display: none;
 }
 @media (max-width: 767px) {
-  nav .mobile-menu,
+  nav .mobile-only,
 nav .mobile-search {
-    display: initial;
-    font-size: 2rem;
+    display: flex;
     color: #fff;
-    margin-left: 5%;
+    font-size: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  nav .hide-mobile {
+    display: none;
   }
 }
 

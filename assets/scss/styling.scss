@@ -87,6 +87,32 @@ a:hover {
     }
 }
 
+.wrap-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-dark {
+    .navbar-toggler {
+        color: #fff;
+        border: none;
+        margin: 0;
+        padding: 0;
+        line-height: normal;
+    }
+    .navbar-toggler-icon {
+        position: relative;
+        background-image: none;
+        display: initial;
+        &:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f142";
+            font-weight: 900;
+        }
+    }
+}
+
 nav {
     background: #2d3b46;
 
@@ -97,6 +123,20 @@ nav {
 
         p {
             margin-bottom: 0;
+            @media (max-width: 767px) {
+                font-size: 1rem;
+                padding: 2%;
+            }
+            &.ph-number {
+                @media (max-width: 767px) {
+                    font-size: 0.65rem;
+                    width: 100%;
+                }
+                @media (max-width: 360px) {
+                    display: none;
+                }
+            }
+
         }
 
         img {
@@ -110,8 +150,18 @@ nav {
             flex-direction: inherit;
             align-items: center;
             width: 150px;
-            @media (max-width: 1023px) {
-                justify-content: center;
+        }
+    }
+    a.nav-link.phone {
+        @media (max-width: 767px) {
+            justify-content: flex-start;
+            width: 100%;
+
+        }
+        @media (max-width: 360px) {
+            img {
+                width: 20%;
+                margin-right: 0;
             }
         }
     }
@@ -132,19 +182,22 @@ nav {
         border-radius: 0.5rem;
     }
 
-    .socmed-nav a {
-        color: #fff;
+    .socmed-nav {
         font-size: 1.1rem;
         display: flex;
         align-items: center;
+        flex-direction: row;
 
-        &:hover {
-            color: #a19996;
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #a19996;
+            }
         }
+        @media (max-width: 767px) {
+            position: inherit;
 
-        @media (max-width: 1023px) {
-            display: flex;
-            justify-content: center;
         }
     }
 
@@ -170,17 +223,21 @@ nav {
     img.whatson-icon {
         width: 50%;
     }
-
-    .mobile-menu,
+    .mobile-only,
     .mobile-search {
         display: none;
         @media (max-width: 767px) {
-            display:initial;
-            font-size: 2rem;
+            display:flex;
             color: #fff;
-            margin-left: 5%;
+            font-size: 1rem;
         }
     }
+    .hide-mobile {
+        @media(min-width: 320px) and (max-width:767px) {
+            display: none;
+        }
+    }
+
 }
 
 .header-nav {
