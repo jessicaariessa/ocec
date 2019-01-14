@@ -20,10 +20,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
     <!-- Calendar CSS-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
     <!-- Fonts-->
     <link href="//db.onlinewebfonts.com/c/2dcae3dc9c06f6dba5fbcec9e0257ac5?family=ITC+Lubalin+Graph+Std" rel="stylesheet" type="text/css" />
-    <!-- <link href="//db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=Museo+Sans+500" rel="stylesheet" type="text/css" />-->
 
     <!-- End Fonts-->
 
@@ -120,8 +118,8 @@
         </div>
         <div class="list-event mb-3">
             <div class="container">
-                <div class="row mb-2">
-                    <div class="col-sm-12 col-md-4">
+                <div class="row mb-1">
+                    <div class="col-sm-12 col-md-4 order-sm-1 order-md-1">
                         <div class="event-image">
                             <img src="assets/images/event-image3.jpg" alt="">
                         </div>
@@ -139,15 +137,33 @@
                         <div class="event-detail small-mb">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionTop2" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 small-mb">
+                    <div class="col-12 order-sm-2 order-md-4">
+                        <div class="collapse" id="collapseExtensionTop2">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-2</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 small-mb order-sm-2 order-md-2">
                         <div class="event-detail">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionTop4" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                         <div class="event-image">
@@ -165,7 +181,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-12 order-sm-4 order-md-4">
+                        <div class="collapse" id="collapseExtensionTop4">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-4</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 order-sm-1 order-md-3">
                         <div class="event-image">
                             <img src="assets/images/event-image.jpg" alt="">
                         </div>
@@ -183,67 +217,33 @@
                         <div class="event-detail">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionTop6" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                     </div>
-                </div>
-                <div class="row #extension-event">
-                    <div class="col-12 ">
-                        <div class="event-detail-extension top">
-                            <div class="row mb-3">
-                                <div class="col-12 order-sm-2 order-md-4">
-                                    <div class="event-detail-extension-title">
-                                        <h2>Event Name sm-2 md-4</h2>
-                                        <i class="fas fa-times close"></i>
+                    <div class="col-12 order-sm-6 order-md-4">
+                        <div class="collapse" id="collapseExtensionTop6">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-6</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
                                     </div>
-                                    <div class="event-detail-extension-images">
-                                        <img src="assets/images/event-detail-image1.jpg" alt="">
-                                    </div>
-                                    <div w3-include-html="path/event-detail-extension.html"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <div class="row #extension-event">
-                    <div class="col-12 ">
-                        <div class="event-detail-extension top">
-                            <div class="row mb-3">
-                                <div class="col-12 order-sm-4 order-md-5">
-                                    <div class="event-detail-extension-title">
-                                        <h2>Event Name sm-4 md-5</h2>
-                                        <i class="fas fa-times close"></i>
-                                    </div>
-                                    <div class="event-detail-extension-images">
-                                        <img src="assets/images/event-detail-image1.jpg" alt="">
-                                    </div>
-                                    <div w3-include-html="path/event-detail-extension.html"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row #extension-event">
-                    <div class="col-12 ">
-                        <div class="event-detail-extension top">
-                            <div class="row">
-                                <div class="col-12 order-sm-6 order-md-6">
-                                    <div class="event-detail-extension-title">
-                                        <h2>Event Name sm-6 md-6</h2>
-                                        <i class="fas fa-times close"></i>
-                                    </div>
-                                    <div class="event-detail-extension-images">
-                                        <img src="assets/images/event-detail-image1.jpg" alt="">
-                                    </div>
-                                    <div w3-include-html="path/event-detail-extension.html"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-sm-12 col-md-4 small-mb">
+
+                <div class="row mb-2">
+                    <div class="col-sm-12 col-md-4 order-sm-1 order-md-1">
                         <div class="event-image">
                             <img src="assets/images/event-image3.jpg" alt="">
                         </div>
@@ -258,18 +258,36 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="event-detail">
+                        <div class="event-detail small-mb">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionBelow2" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4 small-mb">
+                    <div class="col-12 order-sm-2 order-md-4">
+                        <div class="collapse" id="collapseExtensionBelow2">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-2 below</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 small-mb order-sm-2 order-md-2">
                         <div class="event-detail">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionBelow4" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                         <div class="event-image">
@@ -287,7 +305,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-4">
+                    <div class="col-12 order-sm-4 order-md-5">
+                        <div class="collapse" id="collapseExtensionBelow4">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-4 below</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 order-sm-1 order-md-3">
                         <div class="event-image">
                             <img src="assets/images/event-image.jpg" alt="">
                         </div>
@@ -305,143 +341,176 @@
                         <div class="event-detail">
                             <h2>Event Name</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a href="whatson.html"><span>VIEW EVENT DETAILS</span></a>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. <a data-toggle="collapse" href="#collapseExtensionBelow6" role="button" aria-expanded="false" aria-controls="collapseExtension"><span>VIEW EVENT DETAILS</span></a>
                             </p>
                         </div>
                     </div>
+                    <div class="col-12 order-sm-6 order-md-4">
+                        <div class="collapse" id="collapseExtensionBelow6">
+                            <div class="event-detail-extension">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <div class="event-detail-extension-title">
+                                            <h2>Event Name sm-6 below</h2>
+                                            <i class="fas fa-times close"></i>
+                                        </div>
+                                        <div class="event-detail-extension-images">
+                                            <img src="assets/images/event-detail-image1.jpg" alt="">
+                                        </div>
+                                        <div w3-include-html="path/event-detail-extension.html"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row #extension-event">
-                    <div class="col-12">
-                        <div class="event-detail-extension bottom">
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="event-detail-extension-title">
-                                        <h2>Event Name</h2>
-                                        <i class="fas fa-times close"></i>
+
+                <div class="container">
+                    <div class="row mb-3">
+                        <div class="col-12 expert">
+                            <div class="expert-title">
+                                <h4>TALK TO OUR EVENT EXPERTS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row mb-lg-5">
+                        <div class="col-sm-12 col-md-4 small-mb">
+                            <div class="expert-image">
+                                <img src="assets/images/experts-Shiekha-Al-Mughairi.jpg" alt="">
+                            </div>
+                            <div class="expert-detail">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-10">
+                                        <h5>Sheikha Al Mugheiry</h5>
+                                        <p>Business Development Manager - International
+                                        </p>
                                     </div>
-                                    <div class="event-detail-extension-images">
-                                        <img src="assets/images/event-detail-image1.jpg" alt="">
+                                    <div class="col-sm-12 col-lg-2">
+                                        <div class="expert-contact">
+                                            <a href="#">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" class="exp-ph">
+                                            <path class="exp-ph" d="M25,0C11.1,0,0,11.2,0,25c0,13.9,11.2,25,25,25c13.9,0,25-11.2,25-25S38.9,0,25,0z M40.5,37.1 c-0.6,2.2-3.6,5.5-6.5,5.5l-0.2-0.1c-4.2-0.2-9.8-4.2-15.1-10.5l-1.9-2.3c-5.2-6.4-8-12.6-7.4-16.7c0.4-2.9,4.7-5.2,7.2-5.2 c1.3,0,1.7,0.5,1.8,1c1.4,2.5,3.1,6.7,3.1,8.2v0.2c-0.3,0.7-1,1.3-1.6,1.6c-0.7,0.4-1.2,0.8-1.4,1.6c0,0.2,0.2,1.5,3.6,5.7l1.5,1.8 c3.4,4.2,4.6,4.6,4.8,4.6c0.9,0.1,1.3-0.2,1.9-0.9c0.4-0.5,1-1.1,1.8 1.3h0.2c1.6,0.3,5.3,2.8,7.6,4.7C40.4,35,40.9,35.6,40.5,37.1 L40.5,37.1z"/>
+                                       </svg>
+                                        </a>
+
+                                            <a href="#">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                            <path class="exp-mail" d="M26.3,27.6L47.7,9.4c-0.4-0.2-0.8-0.2-1.4-0.2H3.6c-0.5,0-0.9,0.1-1.4,0.2l21.6,18.2 C24.5,28.2,25.6,28.2,26.3,27.6z"/>
+                                            <path class="exp-mail" d="M0,12.3c0,0.2,0,0.3,0,0.5v24.4c0,0.5,0.1,1,0.3,1.5l14.9-13.5L0,12.3z"/>
+                                            <path class="exp-mail" d="M49.9,12.3L34.8,25.1l14.9,13.5c0.2-0.4,0.3-0.9,0.3-1.5V12.7C49.9,12.6,49.9,12.4,49.9,12.3z"/>
+                                            <path class="exp-mail" d="M28.6,30.3c-2.1,1.8-5.2,1.8-7.3,0l-3.4-2.9L3.1,40.7c0.1,0,0.2,0,0.3,0h42.7c0.1,0,0.2,0,0.3,0L32,27.4 L28.6,30.3z"/>
+                                        </svg>
+                                        </a>
+                                        </div>
                                     </div>
-                                    <div w3-include-html="path/event-detail-extension.html"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 small-mb">
+                            <div class="expert-image">
+                                <img src="assets/images/experts-Thomas-Joseph.jpg" alt="">
+                            </div>
+                            <div class="expert-detail">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-10">
+                                        <h5>Thomas Joseph</h5>
+                                        <p>Business Development Manager - Exhibitions & Live Events
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-2">
+                                        <div class="expert-contact">
+                                            <a href="#">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" class="exp-ph">
+                                            <path class="exp-ph" d="M25,0C11.1,0,0,11.2,0,25c0,13.9,11.2,25,25,25c13.9,0,25-11.2,25-25S38.9,0,25,0z M40.5,37.1 c-0.6,2.2-3.6,5.5-6.5,5.5l-0.2-0.1c-4.2-0.2-9.8-4.2-15.1-10.5l-1.9-2.3c-5.2-6.4-8-12.6-7.4-16.7c0.4-2.9,4.7-5.2,7.2-5.2 c1.3,0,1.7,0.5,1.8,1c1.4,2.5,3.1,6.7,3.1,8.2v0.2c-0.3,0.7-1,1.3-1.6,1.6c-0.7,0.4-1.2,0.8-1.4,1.6c0,0.2,0.2,1.5,3.6,5.7l1.5,1.8 c3.4,4.2,4.6,4.6,4.8,4.6c0.9,0.1,1.3-0.2,1.9-0.9c0.4-0.5,1-1.1,1.8 1.3h0.2c1.6,0.3,5.3,2.8,7.6,4.7C40.4,35,40.9,35.6,40.5,37.1 L40.5,37.1z"/>
+                                       </svg>
+                                        </a>
+
+                                            <a href="#">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                            <path class="exp-mail" d="M26.3,27.6L47.7,9.4c-0.4-0.2-0.8-0.2-1.4-0.2H3.6c-0.5,0-0.9,0.1-1.4,0.2l21.6,18.2 C24.5,28.2,25.6,28.2,26.3,27.6z"/>
+                                            <path class="exp-mail" d="M0,12.3c0,0.2,0,0.3,0,0.5v24.4c0,0.5,0.1,1,0.3,1.5l14.9-13.5L0,12.3z"/>
+                                            <path class="exp-mail" d="M49.9,12.3L34.8,25.1l14.9,13.5c0.2-0.4,0.3-0.9,0.3-1.5V12.7C49.9,12.6,49.9,12.4,49.9,12.3z"/>
+                                            <path class="exp-mail" d="M28.6,30.3c-2.1,1.8-5.2,1.8-7.3,0l-3.4-2.9L3.1,40.7c0.1,0,0.2,0,0.3,0h42.7c0.1,0,0.2,0,0.3,0L32,27.4 L28.6,30.3z"/>
+                                        </svg>
+                                        </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4">
+                            <div class="expert-image">
+                                <img src="assets/images/experts-Gillian-Taylor.jpg" alt="">
+                            </div>
+                            <div class="expert-detail">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-10">
+                                        <h5>Gillian Taylor</h5>
+                                        <p>Director of Business Development
+                                        </p>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-2">
+                                        <div class="expert-contact">
+                                            <a href="#">
+                                            <svg width="50" height="50" viewBox="0 0 50 50" class="exp-ph">
+                                            <path class="exp-ph" d="M25,0C11.1,0,0,11.2,0,25c0,13.9,11.2,25,25,25c13.9,0,25-11.2,25-25S38.9,0,25,0z M40.5,37.1 c-0.6,2.2-3.6,5.5-6.5,5.5l-0.2-0.1c-4.2-0.2-9.8-4.2-15.1-10.5l-1.9-2.3c-5.2-6.4-8-12.6-7.4-16.7c0.4-2.9,4.7-5.2,7.2-5.2 c1.3,0,1.7,0.5,1.8,1c1.4,2.5,3.1,6.7,3.1,8.2v0.2c-0.3,0.7-1,1.3-1.6,1.6c-0.7,0.4-1.2,0.8-1.4,1.6c0,0.2,0.2,1.5,3.6,5.7l1.5,1.8 c3.4,4.2,4.6,4.6,4.8,4.6c0.9,0.1,1.3-0.2,1.9-0.9c0.4-0.5,1-1.1,1.8 1.3h0.2c1.6,0.3,5.3,2.8,7.6,4.7C40.4,35,40.9,35.6,40.5,37.1 L40.5,37.1z"/>
+                                       </svg>
+                                        </a>
+
+                                            <a href="#">
+                                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+                                            <path class="exp-mail" d="M26.3,27.6L47.7,9.4c-0.4-0.2-0.8-0.2-1.4-0.2H3.6c-0.5,0-0.9,0.1-1.4,0.2l21.6,18.2 C24.5,28.2,25.6,28.2,26.3,27.6z"/>
+                                            <path class="exp-mail" d="M0,12.3c0,0.2,0,0.3,0,0.5v24.4c0,0.5,0.1,1,0.3,1.5l14.9-13.5L0,12.3z"/>
+                                            <path class="exp-mail" d="M49.9,12.3L34.8,25.1l14.9,13.5c0.2-0.4,0.3-0.9,0.3-1.5V12.7C49.9,12.6,49.9,12.4,49.9,12.3z"/>
+                                            <path class="exp-mail" d="M28.6,30.3c-2.1,1.8-5.2,1.8-7.3,0l-3.4-2.9L3.1,40.7c0.1,0,0.2,0,0.3,0h42.7c0.1,0,0.2,0,0.3,0L32,27.4 L28.6,30.3z"/>
+                                        </svg>
+                                        </a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row mb-3">
-                    <div class="col-12 expert">
-                        <div class="expert-title">
-                            <h4>TALK TO OUR EVENT EXPERTS</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row mb-lg-5">
-                    <div class="col-sm-12 col-md-4 small-mb">
-                        <div class="expert-image">
-                            <img src="assets/images/experts-Shiekha-Al-Mughairi.jpg" alt="">
-                        </div>
-                        <div class="expert-detail">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-10">
-                                    <h5>Sheikha Al Mugheiry</h5>
-                                    <p>Business Development Manager - International
-                                    </p>
-                                </div>
-                                <div class="col-sm-12 col-lg-2">
-                                    <div class="expert-contact">
-                                        <a href="#"><img src="assets/images/whatson-expert-ph.svg" alt="" class="exp-ph"></a>
-                                        <a href="#"><img src="assets/images/whatson-expert-mail.svg" alt="" class="exp-mail"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4 small-mb">
-                        <div class="expert-image">
-                            <img src="assets/images/experts-Thomas-Joseph.jpg" alt="">
-                        </div>
-                        <div class="expert-detail">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-10">
-                                    <h5>Thomas Joseph</h5>
-                                    <p>Business Development Manager - Exhibitions & Live Events
-                                    </p>
-                                </div>
-                                <div class="col-sm-12 col-lg-2">
-                                    <div class="expert-contact">
-                                        <a href="#"><img src="assets/images/whatson-expert-ph.svg" alt="" class="exp-ph"></a>
-                                        <a href="#"><img src="assets/images/whatson-expert-mail.svg" alt="" class="exp-mail"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <div class="expert-image">
-                            <img src="assets/images/experts-Gillian-Taylor.jpg" alt="">
-                        </div>
-                        <div class="expert-detail">
-                            <div class="row">
-                                <div class="col-sm-12 col-lg-10">
-                                    <h5>Gillian Taylor</h5>
-                                    <p>Director of Business Development
-                                    </p>
-                                </div>
-                                <div class="col-sm-12 col-lg-2">
-                                    <div class="expert-contact">
-                                        <a href="#"><img src="assets/images/whatson-expert-ph.svg" alt="" class="exp-ph"></a>
-                                        <a href="#"><img src="assets/images/whatson-expert-mail.svg" alt="" class="exp-mail"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div w3-include-html="path/footer.html"></div>
-        <!-- Bootstrap core JavaScript
+            <div w3-include-html="path/footer.html"></div>
+            <!-- Bootstrap core JavaScript
     ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <!-- Placed at the end of the document so the pages load faster -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+            <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-        <script>
-            includeHTML();
+            <script>
+                includeHTML();
 
-        </script>
-        <script>
-            $(function() {
-                $("#datepicker").datepicker();
-                $('.view-event-details.top').click(function() {
-                    if ($(this) !== false) {
-                        $('.event-detail-extension.top').css('display', 'block');
-                    } else {
-                        $('.event-detail-extension.top').css('display', 'none');
-                    }
+            </script>
+            <script>
+                $(function() {
+                    $("#datepicker").datepicker();
+
+                    //                $('.close').click(function() {
+                    //                    $('.event-detail-extension').css('display', 'none');
+                    //                });
+                    //
+                    //                    $('.close').click(function() {
+                    //                        if ($('.collapse').hasClass('show')) {
+                    //                            $('.event-detail-extension').hide();
+                    //                        } else {
+                    //                            $('span').show();
+                    //                        }
+                    //                    })
+
+
+
                 });
-                $('.view-event-details.bottom').click(function() {
-                    if ($(this) !== false) {
-                        $('.event-detail-extension.bottom').css('display', 'block');
-                    } else {
-                        $('.event-detail-extension.bottom').css('display', 'none');
-                    }
-                });
 
-                $('.close').click(function() {
-                    $('.event-detail-extension').css('display', 'none');
-                });
-            });
-
-        </script>
+            </script>
 
 
 </body>
