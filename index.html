@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styling.css">
     <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
     <!-- Fonts-->
     <link href="//db.onlinewebfonts.com/c/2dcae3dc9c06f6dba5fbcec9e0257ac5?family=ITC+Lubalin+Graph+Std" rel="stylesheet" type="text/css" />
-    <!--    <link href="//db.onlinewebfonts.com/c/16697a764b01cdcc691b05f001046bc3?family=Museo+Sans+500" rel="stylesheet" type="text/css" />-->
-    <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css" charset="utf-8" />
     <!-- End Fonts-->
 
     <script>
@@ -62,6 +61,43 @@
 
 <body>
     <div w3-include-html="path/nav.html"></div>
+    <div class="container-fluid header-nav">
+        <div class="header-img">
+            <img src="assets/images/element-nav-below.png" alt="">
+        </div>
+        <div class="row no-gutters logo-nav-content">
+            <div class="col-sm-12 col-md-4">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <img src="assets/images/OCEC_Logo_Vector_Web_1218-01.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <ul class="navbar-nav menu-nav-below">
+                    <li>
+                        <a class="nav-link nav-whatson" href="whatson.html">
+                            <img src="assets/images/nav-whatson.svg" alt="" class="whatson-icon">
+                            <p>WHAT'S ON</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">
+                            <img src="assets/images/nav-visit.svg" alt="" class="visit-icon">
+                            <p>VISIT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="plan.html">
+                            <img src="assets/images/nav-plan.svg" alt="" class="plan-icon">
+                            <p>PLAN</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div id="frontpage">
         <header>
             <div class="container-fluid px-0 mx-0">
@@ -308,27 +344,27 @@
                         <div class="col-sm-12 col-md-4 small-mb">
                             <div class="more-button">
                                 <a href="#">
-                           <img src="assets/images/accommodation-01.svg" alt="" class="mr-2">
-                            <h5>ACCOMMODATION</h5>
-                            </a>
+                                    <img src="assets/images/accommodation-01.svg" alt="" class="mr-2">
+                                    <h5>ACCOMMODATION</h5>
+                                </a>
 
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 small-mb">
                             <div class="more-button">
                                 <a href="#">
-                               <img src="assets/images/travel-to-ocec-01.svg" alt="" class="mr-2">
-                            <h5>TRAVEL TO OCEC</h5>
-                           </a>
+                                    <img src="assets/images/travel-to-ocec-01.svg" alt="" class="mr-2">
+                                    <h5>TRAVEL TO OCEC</h5>
+                                </a>
 
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-4 small-mb">
                             <div class="more-button">
                                 <a href="#">
-                              <img src="assets/images/about-oman-01.svg" alt="" class="mr-2">
-                            <h5>ABOUT OMAN</h5> 
-                           </a>
+                                    <img src="assets/images/about-oman-01.svg" alt="" class="mr-2">
+                                    <h5>ABOUT OMAN</h5>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -400,9 +436,23 @@
 
         </script>
         <script>
+            $(function() {
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $('.header-nav').addClass('sticky-topbar');
+                    } else {
+                        $('.header-nav').removeClass('sticky-topbar');
+                    }
+                });
+
+            });
+
+        </script>
+        <script>
             includeHTML()
 
         </script>
+
 
 </body>
 

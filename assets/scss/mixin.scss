@@ -1,0 +1,57 @@
+@mixin circle-test($width, $height, $radius, $bgcolor) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+    background: $bgcolor
+}
+
+.the-circle-red {
+    @include circle-test (20px, 20px, 10px, red)
+}
+
+.the-circle-yellow {
+    @include circle-test (20px, 20px, 10px, yellow)
+}
+
+//mixin colors
+
+@mixin gradient-black {
+    background: rgb(71, 73, 73);
+    background: -moz-linear-gradient(top, rgba(71, 73, 73, 1) 1%, rgba(44, 45, 45, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(71, 73, 73, 1) 1%, rgba(44, 45, 45, 1) 100%);
+    background: linear-gradient(to bottom, rgba(71, 73, 73, 1) 1%, rgba(44, 45, 45, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#474949', endColorstr='#2c2d2d', GradientType=0);
+}
+
+@mixin gradient-plan-border {
+    border-image: rgb(141, 210, 204);
+    border-image: -moz-linear-gradient(top, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    border-image: -webkit-linear-gradient(top, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    border-image: linear-gradient(to bottom, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8dd2cc', endColorstr='#88a1c5', GradientType=0);
+    border-image-slice: 1;
+}
+
+@mixin gradient-plan-colorsvg {
+    fill: rgb(141, 210, 204);
+    fill: -moz-linear-gradient(top, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    fill: -webkit-linear-gradient(top, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    fill: linear-gradient(to bottom, rgba(141, 210, 204, 1) 0%, rgba(136, 161, 197, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#8dd2cc', endColorstr='#88a1c5', GradientType=0);
+    border-image-slice: 1;
+}
+
+//end mixin colors
+
+@mixin plan-menu {
+    width: 100%;
+    border: 25px solid;
+    @include gradient-plan-border;
+    @include gradient-black;
+}
+
+@mixin circle($circle-w, $circle-h) {
+    width: $circle-w;
+    height: $circle-h;
+    border-radius: 50%;
+}

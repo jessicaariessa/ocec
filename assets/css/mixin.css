@@ -1,0 +1,15 @@
+.the-circle-red {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: red;
+}
+
+.the-circle-yellow {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: yellow;
+}
+
+/*# sourceMappingURL=mixin.css.map */
