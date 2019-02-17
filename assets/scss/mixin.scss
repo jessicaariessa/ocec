@@ -41,6 +41,13 @@
     border-image-slice: 1;
 }
 
+@mixin gradient-purple {
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(188, 189, 221, 1) 38%, rgba(134, 135, 194, 1) 69%);
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(188, 189, 221, 1) 38%, rgba(134, 135, 194, 1) 69%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(188, 189, 221, 1) 38%, rgba(134, 135, 194, 1) 69%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#8687c2', GradientType=0);
+}
+
 //end mixin colors
 
 @mixin plan-menu {
@@ -54,4 +61,35 @@
     width: $circle-w;
     height: $circle-h;
     border-radius: 50%;
+}
+
+@mixin banner-detail {
+    padding: 0.5% 5% 0 5%;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    bottom: 12%;
+    left: 3%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+@mixin thumbnail-title {
+    padding: 0 5%;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 94%;
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+@mixin visit-menu {
+    width: 100%;
+    border: 25px solid;
+    border-color: #8dd2cc;
 }
