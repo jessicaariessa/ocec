@@ -62,9 +62,11 @@
 <body>
     <div w3-include-html="path/nav.html"></div>
     <div class="container-fluid header-nav">
+
         <div class="header-img">
             <img src="assets/images/element-nav-below.png" alt="">
         </div>
+        <div class="header-nav header-nav__modif"></div>
         <div class="row no-gutters logo-nav-content">
             <div class="col-sm-12 col-md-4">
                 <a href="index.html">
@@ -445,6 +447,14 @@
                     }
                 });
 
+            });
+
+            $(function checkPosition() {
+                if (window.matchMedia('(max-width: 767px)').matches) {
+                    $('.header-nav').removeClass('sticky-topbar');
+                } else {
+                    $('.header-nav').addClass('sticky-topbar');
+                }
             });
 
         </script>
