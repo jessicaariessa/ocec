@@ -121,6 +121,10 @@ nav {
         font-size: 0.7rem;
         letter-spacing: 2px;
 
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
         p {
             color: #fff;
             margin-bottom: 0;
@@ -591,6 +595,32 @@ nav {
                 }
             }
         }
+
+        &__purple {
+            ul.slick-dots {
+                right: 0;
+                left: 95%;
+                transform: translate(0, 0);
+
+                @media (max-width: 1023px) {
+                    left: 85%;
+                    transform: translate(0, 25%);
+                }
+            }
+
+            .slick-dots li.slick-active button {
+                background-color: #2c2d2d;
+                opacity: 0.2;
+            }
+
+            img {
+                width: 100%;
+
+                @media (max-width: 767px) {
+                    width: 150%;
+                }
+            }
+        }
     }
 
     .container-banner {
@@ -676,6 +706,7 @@ nav {
                     top: 2%;
                     position: absolute;
                 }
+
             }
         }
 
@@ -700,6 +731,7 @@ nav {
     }
 
 }
+
 
 
 .list-event {
@@ -804,6 +836,8 @@ nav {
         }
     }
 }
+
+
 
 .view-all {
     height: 50px;
@@ -912,22 +946,22 @@ nav {
 
     .video-placeholder {
         position: relative;
-
-        &:after {
-            content: '\f167';
-            position: absolute;
-            top: 25%;
-            left: 50%;
-            transform: translate(-50%, 50%);
-            color: #fff;
-            font-size: 8rem;
-            font-family: "Font Awesome 5 Brands";
-
-            @media (max-width: 767px) {
-                font-size: 3rem;
-                transform: translate(-50%, 35%);
-            }
-        }
+//
+//        &:after {
+//            content: '\f167';
+//            position: absolute;
+//            top: 25%;
+//            left: 50%;
+//            transform: translate(-50%, 50%);
+//            color: #fff;
+//            font-size: 8rem;
+//            font-family: "Font Awesome 5 Brands";
+//
+//            @media (max-width: 767px) {
+//                font-size: 3rem;
+//                transform: translate(-50%, 35%);
+//            }
+//        }
 
         img {
             width: 100%;
@@ -1059,8 +1093,11 @@ nav {
     border-color: #fff;
 }
 
-#whatson {
-    .events-filter {
+#whatson,
+#careers {
+
+    .events-filter,
+    .career-filter {
         @media (max-width: 767px) {
             margin-top: 18%;
         }
@@ -1069,6 +1106,100 @@ nav {
     .list-event {
         @media (max-width: 767px) {
             margin-top: 0;
+        }
+
+        .event-date {
+            position: absolute;
+            padding: 2% 5% 6%;
+            width: 50%;
+            margin: 2%;
+
+            span.month {
+                line-height: 4;
+
+                @media (max-width: 767px) {
+                    line-height: 2.3;
+                    font-size: 1rem;
+                }
+            }
+
+            span.date {
+                font-size: 2rem;
+            }
+
+            span.location {
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                position: absolute;
+                left: -9%;
+                bottom: -21%;
+
+                @media (max-width: 1023px) {
+                    position: initial;
+                    display: block;
+                }
+
+                @media (max-width:767px) {
+                    font-size: initial;
+                }
+            }
+
+            &__purple {
+                background: #8687c2;
+                top: 0;
+
+                @media (max-width: 1023px) {
+                    position: inherit;
+                    width: 100%;
+                    margin: 0;
+                }
+            }
+
+            &__green {
+                background: #8dd2cc;
+                bottom: 0;
+                right: 1%;
+
+                @media (max-width: 1023px) {
+                    position: inherit;
+                    width: 100%;
+                    margin: 0;
+                    right: 0;
+                }
+            }
+        }
+
+        .event-image img {
+            width: 100%;
+        }
+
+        .event-detail {
+            background: #2c2d2d;
+            padding: 4% 7% 1% 7%;
+
+            @media (max-width: 1023px) {
+                padding-top: 8%;
+            }
+
+
+            h2 {
+                font-family: "ITC Lubalin Graph Std";
+                text-transform: uppercase;
+                letter-spacing: 10px;
+
+                @media (min-width: 767px) and (max-width:1023px) {
+                    letter-spacing: 5px;
+                }
+            }
+
+            p {
+                line-height: 2;
+            }
+
+            p span {
+                color: #8dd2cc;
+                cursor: pointer;
+            }
         }
     }
 
@@ -1094,7 +1225,8 @@ nav {
             }
         }
 
-        a.btn {
+        a.btn,
+        input#example-search-input {
             width: 100%;
             font-size: 1.5rem;
             color: #7d716d;
@@ -1103,6 +1235,7 @@ nav {
             border: none;
             padding: 3% 0;
             border-radius: 0;
+            text-align: center;
 
             @media (max-width: 1023px) {
                 font-size: 1.2rem;
@@ -1163,7 +1296,7 @@ nav {
 
         .input-group {
             flex-wrap: nowrap;
-            padding: 3% 0;
+            padding: 2.5% 0;
 
             @media (max-width: 767px) {
                 padding: 2% 0;
@@ -1522,6 +1655,218 @@ nav {
     }
 }
 
+#careers {
+    .title-banner .title-top-banner {
+        position: absolute;
+        width: 145px;
+
+        &__left {
+            border-color: #8687c2;
+        }
+    }
+
+    .title-banner-text__left {
+        border-color: #8687c2;
+        left: 5%;
+        width: 228px;
+
+        @media (max-width: 1023px) {
+            width: 100%;
+            left: 0;
+        }
+    }
+
+    .list-careers .container {
+        @media (max-width: 767px) {
+            margin-top: 10%;
+        }
+    }
+
+    .list-careers .careers-menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        padding: 5% 0;
+        width: 100%;
+        border: 25px solid #8dd2cc;
+        margin-top: 3%;
+        height: 372px;
+
+
+        @media (max-width: 767px) {
+            height: 350px;
+            justify-content: center;
+            border-width: 15px;
+        }
+
+        //        .plan-menu-container:first-child {
+        //            margin-top: 18%;
+        //        }
+
+        .plan-menu-container {
+            @media (min-width: 768px)and(max-width:1023px) {
+                border-width: 10px;
+                height: 295px;
+                padding: 10% 0;
+            }
+        }
+
+        &__img1 {
+            background-image: url(../images/careers-filter.jpg);
+            background-size: cover;
+            height: auto;
+        }
+
+        .careers-menu-title {
+            color: #fff;
+            font-size: 1.25rem;
+            letter-spacing: 2px;
+            text-align: center;
+            line-height: 1.7rem;
+            margin: 0;
+            padding-top: 63%;
+            text-transform: uppercase;
+
+            span {
+                font-size: 1rem;
+            }
+        }
+
+        button {
+            &.learn-menu-button {
+                font-size: 0.6rem;
+                letter-spacing: 2px;
+                border-radius: 0;
+
+                a {
+                    color: #fff;
+
+                    &:hover {
+                        color: #2c2d2d;
+                    }
+                }
+            }
+        }
+    }
+
+    .list-careers .careers-detail {
+        border-top: 1px solid #2c2d2d;
+        border-bottom: 1px solid #2c2d2d;
+        padding: 3% 0;
+        margin: 3% auto;
+
+        .careers-detail-banner {
+            position: relative;
+
+            img {
+                width: 100%;
+                margin-bottom: 2%;
+            }
+
+            i.fas.fa-times.close {
+                position: absolute;
+                color: #fff;
+                right: 2%;
+                top: 4%;
+
+                @media (max-width: 1023px) {
+                    font-size: inherit;
+                }
+            }
+        }
+
+        .careers-detail-banner-title {
+            @include banner-detail;
+            padding: 0.5% 5% 0 0;
+
+            @media (max-width: 767px) {
+                left: 0;
+                padding: 0;
+                right: 0;
+            }
+
+            h3 {
+                @media(max-width: 767px) {
+                    font-size: 0.8rem;
+                }
+
+                span {
+                    font-size: 1rem;
+                    letter-spacing: 2px;
+
+                    @media (max-width: 767px) {
+                        font-size: 0.6rem;
+                        display: block;
+                    }
+                }
+            }
+
+        }
+
+        .form-title {
+            width: 100%;
+            background: #8687c2;
+            text-align: center;
+            color: #fff;
+            font-size: 1.25rem;
+            letter-spacing: 3px;
+            text-align: center;
+            line-height: 1.7rem;
+            text-transform: uppercase;
+            padding: 2%;
+            margin-bottom: 5%;
+        }
+
+        form {
+
+            input,
+            textarea {
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                height: 40px
+            }
+
+            textarea {
+                height: 100px !important;
+                padding-top: 5%;
+            }
+
+            .form-control {
+                border: none;
+                border-bottom: 1px solid #ddd;
+
+                &.form-control-sm {
+                    border-radius: 0;
+                }
+            }
+
+            button.submit-application {
+                width: 100%;
+                background: #3c3c3c;
+                border: #3c3c3c;
+                border-radius: 0;
+                padding: 3% 0;
+                letter-spacing: 3px;
+
+                &:hover {
+                    background: #8687c2;
+                }
+
+                i.fas.fa-caret-right {
+                    color: #8dd2cc;
+                }
+
+            }
+        }
+    }
+
+    .col-md-4 {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+
 footer {
     .footer-bg img {
         width: 100%
@@ -1720,7 +2065,7 @@ footer {
         }
 
         @media (min-width:768px)and(max-width:1023px) {
-            border-width: 15px;
+            border-width: 10px;
             height: 295px;
             padding: 10% 0;
         }
@@ -1906,7 +2251,7 @@ footer {
         left: 5%;
         width: 145px;
 
-        @media (max-width: 767px) {
+        @media (max-width: 1023px) {
             width: 100%;
             left: 0;
         }
@@ -1939,6 +2284,11 @@ footer {
                     margin-top: 7%;
                 }
             }
+
+            @media (min-width:768px) and (max-width:1028px) {
+                border-width: 10px;
+            }
+
 
             &__img1 {
                 background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
@@ -1976,6 +2326,10 @@ footer {
 
             @media (max-width: 767px) {
                 margin: 10% 0;
+            }
+
+            @media (min-width:768px) and (max-width:1028px) {
+                letter-spacing: 2px;
             }
         }
 
@@ -2247,7 +2601,47 @@ footer {
     }
 }
 
+.btn.focus,
+.btn:focus {
+    box-shadow: none;
+}
+
+.btn-outline-secondary {
+    color: transparent;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    background: transparent;
+    color: transparent;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-secondary.dropdown-toggle:focus {
+    box-shadow: none;
+}
+
 //bootstrap end
+
+//general  
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//end general
 
 //slick 
 .slick-slide img {
