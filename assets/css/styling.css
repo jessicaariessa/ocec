@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(//db.onlinewebfonts.com/c/2dcae3dc9c06f6dba5fbcec9e0257ac5?family=ITC+Lubalin+Graph+Std);
 @font-face {
   font-family: "ITC Lubalin Graph Std";
@@ -2559,6 +2560,177 @@ footer p.text-footer__member {
   #visit .col-md-4 {
     padding-left: 15px;
     padding-right: 15px;
+  }
+}
+
+#gallery .col-12.gallery {
+  padding: 0 4px;
+}
+#gallery .gallery-title {
+  height: 50px;
+  background: #2c2d2d;
+  color: #fff;
+}
+#gallery .gallery-title h4 {
+  margin: 0;
+  padding: 1% 2%;
+  background: #8687c2;
+  width: 50%;
+  height: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  #gallery .gallery-title h4 {
+    width: 80%;
+    padding: 2%;
+    margin-top: 8%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #gallery .gallery-title h4 {
+    width: 65%;
+    padding: 2%;
+  }
+}
+#gallery .gallery-title h4 img {
+  height: 35px;
+  margin-right: 2%;
+}
+@media (max-width: 767px) {
+  #gallery .gallery-title h4 img {
+    height: 95%;
+    margin-right: 5%;
+  }
+}
+#gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  #gallery .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #gallery .gallery-container .gallery-content {
+    width: 49.92754%;
+  }
+}
+#gallery .gallery-container .gallery-thumbnail {
+  margin: 5%;
+}
+#gallery .gallery-container .gallery-thumbnail img {
+  padding: 0 5%;
+  max-width: 225px;
+}
+@media (max-width: 768px) {
+  #gallery .gallery-container .gallery-thumbnail img {
+    width: 100%;
+    max-width: none;
+  }
+}
+#gallery .gallery-container .gallery-thumbnail:first-child {
+  padding-left: 0;
+}
+#gallery .gallery-container .gallery-desc p {
+  padding-left: 10%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #gallery .gallery-container .gallery-desc p {
+    margin-bottom: 1rem;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  #gallery .gallery-container.desktop {
+    display: none;
+  }
+}
+@media (max-width: 1023px) {
+  #gallery .gallery-container.mobile {
+    display: block;
+    padding: 0 5%;
+  }
+  #gallery .gallery-container.mobile .js .slider-single > div:nth-child(1n+2) {
+    display: none;
+  }
+  #gallery .gallery-container.mobile .js .slider-single.slick-initialized > div:nth-child(1n+2) {
+    display: block;
+  }
+  #gallery .gallery-container.mobile img {
+    margin: 0;
+    position: relative;
+  }
+  #gallery .gallery-container.mobile .slider-single img {
+    line-height: 10rem;
+  }
+  #gallery .gallery-container.mobile .slider-nav img::before {
+    content: "";
+    display: block;
+    padding-top: 75%;
+  }
+  #gallery .gallery-container.mobile .slider-nav .slick-slide {
+    cursor: pointer;
+    padding: 0 2px;
+  }
+  #gallery .gallery-container.mobile .slider-nav .slick-prev:before {
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    left: 1%;
+  }
+  #gallery .gallery-container.mobile .slider-nav .slick-next:before {
+    position: absolute;
+    top: 40%;
+    z-index: 100;
+    right: 1%;
+  }
+  #gallery .gallery-container.mobile .slick-slide.is-active img {
+    border-bottom: 1.5px solid #ddd;
+    width: 100%;
+    padding-bottom: 5%;
+  }
+  #gallery .gallery-container.mobile button[aria-label] {
+    color: transparent;
+  }
+  #gallery .gallery-container.mobile .slick-prev:before,
+#gallery .gallery-container.mobile .slick-next:before {
+    font-family: "slick";
+    font-size: 20px;
+    line-height: 1;
+    opacity: 0.75;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #gallery .gallery-container.mobile .slick-next:before {
+    content: "→";
+  }
+  #gallery .gallery-container.mobile .slick-prev:before {
+    content: "←";
+  }
+  #gallery .gallery-container.mobile .slider-single .slick-prev:before {
+    position: absolute;
+    top: 45%;
+    z-index: 100;
+    left: 5%;
+  }
+  #gallery .gallery-container.mobile .slider-single .slick-next:before {
+    position: absolute;
+    bottom: 45%;
+    z-index: 100;
+    right: 5%;
+  }
+}
+@media (min-width: 1024px) {
+  #gallery .gallery-container.mobile {
+    display: none;
   }
 }
 
