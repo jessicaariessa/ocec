@@ -1224,10 +1224,16 @@ nav {
             text-align: center;
             width: 100%;
             border-radius: 0;
+            cursor: pointer;
 
             @media (max-width: 1023px) {
                 font-size: 1.2rem;
             }
+        }
+
+        input[value]#datepicker:hover {
+            background: #7d716d;
+            color: #fff;
         }
 
         a.btn,
@@ -1245,6 +1251,15 @@ nav {
             @media (max-width: 1023px) {
                 font-size: 1.2rem;
             }
+        }
+
+        a.btn:hover {
+            background: #7d716d;
+            color: #fff;
+        }
+
+        a:after:hover {
+            color: #fff;
         }
 
         .dropdown-menu.show {
@@ -1324,7 +1339,9 @@ nav {
 
         .fas.fa-search:before {
             color: #7d716d;
+
         }
+
     }
 
     .col-12.expert {
@@ -1573,6 +1590,10 @@ nav {
                 justify-content: center;
             }
 
+            &:hover {
+                background: #3c3c3c;
+                cursor: pointer;
+            }
 
             a {
                 text-decoration: none;
@@ -2294,29 +2315,28 @@ footer {
                 border-width: 10px;
             }
 
-
             &__img1 {
-                background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
 
             &__img2 {
-                background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
 
             &__img3 {
-                background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
 
             &__img4 {
-                background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
 
             &__img5 {
-                background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
 
             &__img6 {
-                background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+                background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
             }
         }
 
@@ -2480,6 +2500,11 @@ footer {
                     padding: 0;
                     flex-direction: column;
                     justify-content: center;
+                }
+
+                &:hover {
+                    background: #3c3c3c;
+                    cursor: pointer;
                 }
 
 
@@ -2933,6 +2958,10 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.active-svg {
+    fill: #2c2d2d;
 }
 
 //end general

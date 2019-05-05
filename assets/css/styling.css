@@ -1178,6 +1178,7 @@ nav .mobile-search {
   text-align: center;
   width: 100%;
   border-radius: 0;
+  cursor: pointer;
 }
 @media (max-width: 1023px) {
   #whatson .event-options input[value]#datepicker,
@@ -1185,6 +1186,12 @@ nav .mobile-search {
 #search-result .event-options input[value]#datepicker {
     font-size: 1.2rem;
   }
+}
+#whatson .event-options input[value]#datepicker:hover,
+#careers .event-options input[value]#datepicker:hover,
+#search-result .event-options input[value]#datepicker:hover {
+  background: #7d716d;
+  color: #fff;
 }
 #whatson .event-options a.btn,
 #whatson .event-options input#example-search-input,
@@ -1211,6 +1218,17 @@ nav .mobile-search {
 #search-result .event-options input#example-search-input {
     font-size: 1.2rem;
   }
+}
+#whatson .event-options a.btn:hover,
+#careers .event-options a.btn:hover,
+#search-result .event-options a.btn:hover {
+  background: #7d716d;
+  color: #fff;
+}
+#whatson .event-options a:after:hover,
+#careers .event-options a:after:hover,
+#search-result .event-options a:after:hover {
+  color: #fff;
 }
 #whatson .event-options .dropdown-menu.show,
 #careers .event-options .dropdown-menu.show,
@@ -1653,6 +1671,12 @@ nav .mobile-search {
     flex-direction: column;
     justify-content: center;
   }
+}
+#whatson .event-buttons .button-detail-event:hover,
+#careers .event-buttons .button-detail-event:hover,
+#search-result .event-buttons .button-detail-event:hover {
+  background: #3c3c3c;
+  cursor: pointer;
 }
 #whatson .event-buttons .button-detail-event a,
 #careers .event-buttons .button-detail-event a,
@@ -2375,22 +2399,22 @@ footer p.text-footer__member {
   }
 }
 #visit .visit-menu .visit-menu-container__img1 {
-  background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-container__img2 {
-  background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-container__img3 {
-  background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-container__img4 {
-  background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-container__img5 {
-  background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-container__img6 {
-  background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 38%, #9993ad 69%);
+  background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
 }
 #visit .visit-menu .visit-menu-title {
   color: #fff;
@@ -2566,6 +2590,10 @@ footer p.text-footer__member {
     flex-direction: column;
     justify-content: center;
   }
+}
+#visit .visit-menu .plan-detail .button-detail-event:hover {
+  background: #3c3c3c;
+  cursor: pointer;
 }
 #visit .visit-menu .plan-detail .button-detail-event a {
   text-decoration: none;
@@ -2926,6 +2954,10 @@ footer p.text-footer__member {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.active-svg {
+  fill: #2c2d2d;
 }
 
 .slick-slide img {
