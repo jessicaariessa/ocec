@@ -39,7 +39,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "museo_sans500";
-  font-size: 0.9em;
+  font-size: 1rem;
   width: 100%;
 }
 
@@ -72,8 +72,11 @@ body {
   }
 }
 
-p {
-  font-size: 0.9em;
+p,
+ul,
+ol,
+li {
+  font-size: 1rem;
 }
 
 i p {
@@ -2399,22 +2402,22 @@ footer p.text-footer__member {
   }
 }
 #visit .visit-menu .visit-menu-container__img1 {
-  background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu1.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-container__img2 {
-  background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu2.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-container__img3 {
-  background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu3.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-container__img4 {
-  background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu4.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-container__img5 {
-  background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu5.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-container__img6 {
-  background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 68%, #6b6476 76%);
+  background-image: url(../images/visit-menu6.jpg), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #b8b9d8 52%, #6b6476 68%);
 }
 #visit .visit-menu .visit-menu-title {
   color: #fff;
