@@ -18,7 +18,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: "museo_sans500";
-    font-size: 0.75rem;
+    font-size: 0.9em;
     width: 100%;
 }
 
@@ -48,6 +48,10 @@ h5 {
     @media (max-width: 1023px) {
         font-size: calc(115%);
     }
+}
+
+p {
+    font-size: 0.9em;
 }
 
 i p {
@@ -1094,7 +1098,8 @@ nav {
 }
 
 #whatson,
-#careers {
+#careers,
+#search-result {
 
     .events-filter,
     .career-filter {
@@ -2822,6 +2827,63 @@ footer {
     }
 
 }
+
+#search-result {
+    .title-banner .title-top-banner {
+        position: absolute;
+        width: 145px;
+    }
+
+    .title-banner .title-top-banner__left {
+        left: 0;
+    }
+
+    .title-banner-text__left {
+        left: 5%;
+        width: 200px;
+    }
+
+    .search-container {
+        h4 {
+            color: #7d716d;
+            letter-spacing: 1.5px;
+
+            span {
+                color: #8dd2cc;
+                font-style: italic;
+            }
+        }
+
+
+        .col-12.ol-margin {
+            padding-right: 0;
+
+            ol {
+                padding-inline-start: 0;
+                margin-block-start: 0;
+
+                li {
+                    color: #8dd2cc;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                    letter-spacing: 1.5px;
+                    font-size: 1.1rem;
+                    list-style-position: inside;
+                }
+
+                p {
+                    line-height: 1.7;
+                }
+
+                hr {
+                    margin: 3% 0;
+                }
+            }
+        }
+    }
+
+}
+
 
 //bootstrap
 .col-md-4 {

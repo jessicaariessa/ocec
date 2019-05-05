@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>OCEC</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styling.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css" />
+
+    <!-- Fonts-->
+    <link href="//db.onlinewebfonts.com/c/2dcae3dc9c06f6dba5fbcec9e0257ac5?family=ITC+Lubalin+Graph+Std" rel="stylesheet" type="text/css" />
+    <!-- End Fonts-->
+
+    <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /* Loop through a collection of all HTML elements: */
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("w3-include-html");
+                if (file) {
+                    /* Make an HTTP request using the attribute value as the file name: */
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /* Remove the attribute, and call this function once more: */
+                            elmnt.removeAttribute("w3-include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /* Exit the function: */
+                    return;
+                }
+            }
+        }
+
+    </script>
+
+</head>
+
+
+<body>
+    <div w3-include-html="path/nav.html"></div>
+    <div class="container-fluid header-nav">
+        <div class="header-img">
+            <img src="assets/images/element-nav-below.png" alt="">
+        </div>
+        <div class="row no-gutters logo-nav-content">
+            <div class="col-sm-12 col-md-4">
+                <a href="index.html">
+                    <div class="logo-container">
+                        <img src="assets/images/OCEC_Logo_Vector_Web_1218-01.svg" alt="">
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-sm-12 col-md-8">
+                <ul class="navbar-nav menu-nav-below">
+                    <li>
+                        <a class="nav-link nav-whatson" href="whatson.html">
+                            <img src="assets/images/nav-whatson.svg" alt="" class="whatson-icon">
+                            <p>WHAT'S ON</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="visit.html">
+                            <img src="assets/images/nav-visit.svg" alt="" class="visit-icon">
+                            <p>VISIT</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="plan.html">
+                            <img src="assets/images/nav-plan.svg" alt="" class="plan-icon">
+                            <p>PLAN</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="search-result">
+        <div class="title-banner plan mb-3">
+            <div class="title-banner-container title-banner-container__green">
+                <div class="slider-container mb-3">
+                    <div>
+                        <img src="assets/images/plan-event-header.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/plan-event-header.jpg" alt="">
+                    </div>
+                    <div>
+                        <img src="assets/images/plan-event-header.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="container-banner container-banner__left">
+                <div class="title-top-banner title-top-banner__left"></div>
+                <div class="title-banner-text title-banner-text__left inner-title-banner">
+                    <h2>SEARCH</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-9">
+                        <h4>YOU HAVE SEARCHED FOR <span>“FLOOR PLAN”</span>
+                            <br>showing <span>123</span> results</h4>
+                    </div>
+                    <div class="col-3">
+                        <div class="event-options">
+                            <div class="input-group">
+                                <input class="form-control py-2" type="search" id="example-search-input" placeholder="NEW SEARCH">
+                                <span class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mb-3">
+                    <div class="col-12 ol-margin">
+                        <ol>
+                            <li>FLOOR PLAN - VIRTUAL TOURS</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                            <li>FLOOR PLAN - PLAN SECTION</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                            <li>FLOOR PLAN - OCEC NEWS</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                            <li>FLOOR PLAN - MEDIA GALLERY</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                            <li>FLOOR PLAN - EVENT TOOLKIT</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                            <li>FLOOR PLAN - CONTACT US</li>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. </p>
+                            <hr>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div w3-include-html="path/footer.html"></div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="assets/js/slick.js"></script>
+    <script type="text/javascript">
+        $('.slider-container').slick({
+            dots: true,
+            infinite: true,
+            speed: 2000,
+            fade: true,
+            cssEase: 'linear',
+            autoplay: true,
+            infinite: true,
+            arrows: false,
+            pauseOnHover: false,
+            adaptiveHeight: true,
+        });
+
+    </script>
+
+    <script>
+        includeHTML();
+
+    </script>
+    <script>
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+                $('.header-nav').addClass('sticky-topbar');
+            } else {
+                $('.header-nav').removeClass('sticky-topbar');
+            }
+        });
+
+    </script>
+
+
+
+</body>
+
+</html>

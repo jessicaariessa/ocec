@@ -18,7 +18,7 @@
   font-style: normal;
 }
 html {
-  font-size: 15px;
+  font-size: 0.9em;
 }
 
 .the-circle-red {
@@ -39,7 +39,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "museo_sans500";
-  font-size: 0.75rem;
+  font-size: 0.9em;
   width: 100%;
 }
 
@@ -70,6 +70,10 @@ body {
   h5 {
     font-size: calc(115%);
   }
+}
+
+p {
+  font-size: 0.9em;
 }
 
 i p {
@@ -1015,40 +1019,48 @@ nav .mobile-search {
   #whatson .events-filter,
 #whatson .career-filter,
 #careers .events-filter,
-#careers .career-filter {
+#careers .career-filter,
+#search-result .events-filter,
+#search-result .career-filter {
     margin-top: 18%;
   }
 }
 @media (max-width: 767px) {
   #whatson .list-event,
-#careers .list-event {
+#careers .list-event,
+#search-result .list-event {
     margin-top: 0;
   }
 }
 #whatson .list-event .event-date,
-#careers .list-event .event-date {
+#careers .list-event .event-date,
+#search-result .list-event .event-date {
   position: absolute;
   padding: 2% 5% 6%;
   width: 50%;
   margin: 2%;
 }
 #whatson .list-event .event-date span.month,
-#careers .list-event .event-date span.month {
+#careers .list-event .event-date span.month,
+#search-result .list-event .event-date span.month {
   line-height: 4;
 }
 @media (max-width: 767px) {
   #whatson .list-event .event-date span.month,
-#careers .list-event .event-date span.month {
+#careers .list-event .event-date span.month,
+#search-result .list-event .event-date span.month {
     line-height: 2.3;
     font-size: 1rem;
   }
 }
 #whatson .list-event .event-date span.date,
-#careers .list-event .event-date span.date {
+#careers .list-event .event-date span.date,
+#search-result .list-event .event-date span.date {
   font-size: 2rem;
 }
 #whatson .list-event .event-date span.location,
-#careers .list-event .event-date span.location {
+#careers .list-event .event-date span.location,
+#search-result .list-event .event-date span.location {
   letter-spacing: 3px;
   text-transform: uppercase;
   position: absolute;
@@ -1057,39 +1069,45 @@ nav .mobile-search {
 }
 @media (max-width: 1023px) {
   #whatson .list-event .event-date span.location,
-#careers .list-event .event-date span.location {
+#careers .list-event .event-date span.location,
+#search-result .list-event .event-date span.location {
     position: initial;
     display: block;
   }
 }
 @media (max-width: 767px) {
   #whatson .list-event .event-date span.location,
-#careers .list-event .event-date span.location {
+#careers .list-event .event-date span.location,
+#search-result .list-event .event-date span.location {
     font-size: initial;
   }
 }
 #whatson .list-event .event-date__purple,
-#careers .list-event .event-date__purple {
+#careers .list-event .event-date__purple,
+#search-result .list-event .event-date__purple {
   background: #8687c2;
   top: 0;
 }
 @media (max-width: 1023px) {
   #whatson .list-event .event-date__purple,
-#careers .list-event .event-date__purple {
+#careers .list-event .event-date__purple,
+#search-result .list-event .event-date__purple {
     position: inherit;
     width: 100%;
     margin: 0;
   }
 }
 #whatson .list-event .event-date__green,
-#careers .list-event .event-date__green {
+#careers .list-event .event-date__green,
+#search-result .list-event .event-date__green {
   background: #8dd2cc;
   bottom: 0;
   right: 1%;
 }
 @media (max-width: 1023px) {
   #whatson .list-event .event-date__green,
-#careers .list-event .event-date__green {
+#careers .list-event .event-date__green,
+#search-result .list-event .event-date__green {
     position: inherit;
     width: 100%;
     margin: 0;
@@ -1097,52 +1115,62 @@ nav .mobile-search {
   }
 }
 #whatson .list-event .event-image img,
-#careers .list-event .event-image img {
+#careers .list-event .event-image img,
+#search-result .list-event .event-image img {
   width: 100%;
 }
 #whatson .list-event .event-detail,
-#careers .list-event .event-detail {
+#careers .list-event .event-detail,
+#search-result .list-event .event-detail {
   background: #2c2d2d;
   padding: 4% 7% 1% 7%;
 }
 @media (max-width: 1023px) {
   #whatson .list-event .event-detail,
-#careers .list-event .event-detail {
+#careers .list-event .event-detail,
+#search-result .list-event .event-detail {
     padding-top: 8%;
   }
 }
 #whatson .list-event .event-detail h2,
-#careers .list-event .event-detail h2 {
+#careers .list-event .event-detail h2,
+#search-result .list-event .event-detail h2 {
   font-family: "ITC Lubalin Graph Std";
   text-transform: uppercase;
   letter-spacing: 10px;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #whatson .list-event .event-detail h2,
-#careers .list-event .event-detail h2 {
+#careers .list-event .event-detail h2,
+#search-result .list-event .event-detail h2 {
     letter-spacing: 5px;
   }
 }
 #whatson .list-event .event-detail p,
-#careers .list-event .event-detail p {
+#careers .list-event .event-detail p,
+#search-result .list-event .event-detail p {
   line-height: 2;
 }
 #whatson .list-event .event-detail p span,
-#careers .list-event .event-detail p span {
+#careers .list-event .event-detail p span,
+#search-result .list-event .event-detail p span {
   color: #8dd2cc;
   cursor: pointer;
 }
 #whatson .event-options,
-#careers .event-options {
+#careers .event-options,
+#search-result .event-options {
   width: 100%;
   border: 1px solid #7d716d;
 }
 #whatson .event-options #datepicker,
-#careers .event-options #datepicker {
+#careers .event-options #datepicker,
+#search-result .event-options #datepicker {
   border: none;
 }
 #whatson .event-options input[value]#datepicker,
-#careers .event-options input[value]#datepicker {
+#careers .event-options input[value]#datepicker,
+#search-result .event-options input[value]#datepicker {
   padding: 3% 0;
   font-size: 1.5rem;
   color: #7d716d;
@@ -1153,14 +1181,17 @@ nav .mobile-search {
 }
 @media (max-width: 1023px) {
   #whatson .event-options input[value]#datepicker,
-#careers .event-options input[value]#datepicker {
+#careers .event-options input[value]#datepicker,
+#search-result .event-options input[value]#datepicker {
     font-size: 1.2rem;
   }
 }
 #whatson .event-options a.btn,
 #whatson .event-options input#example-search-input,
 #careers .event-options a.btn,
-#careers .event-options input#example-search-input {
+#careers .event-options input#example-search-input,
+#search-result .event-options a.btn,
+#search-result .event-options input#example-search-input {
   width: 100%;
   font-size: 1.5rem;
   color: #7d716d;
@@ -1175,12 +1206,15 @@ nav .mobile-search {
   #whatson .event-options a.btn,
 #whatson .event-options input#example-search-input,
 #careers .event-options a.btn,
-#careers .event-options input#example-search-input {
+#careers .event-options input#example-search-input,
+#search-result .event-options a.btn,
+#search-result .event-options input#example-search-input {
     font-size: 1.2rem;
   }
 }
 #whatson .event-options .dropdown-menu.show,
-#careers .event-options .dropdown-menu.show {
+#careers .event-options .dropdown-menu.show,
+#search-result .event-options .dropdown-menu.show {
   width: 120%;
   padding-left: 14%;
   font-size: 1.5rem;
@@ -1189,39 +1223,46 @@ nav .mobile-search {
 }
 @media (max-width: 1023px) {
   #whatson .event-options .dropdown-menu.show,
-#careers .event-options .dropdown-menu.show {
+#careers .event-options .dropdown-menu.show,
+#search-result .event-options .dropdown-menu.show {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 767px) {
   #whatson .event-options .dropdown-menu.show,
-#careers .event-options .dropdown-menu.show {
+#careers .event-options .dropdown-menu.show,
+#search-result .event-options .dropdown-menu.show {
     width: 100%;
   }
 }
 #whatson .event-options a,
-#careers .event-options a {
+#careers .event-options a,
+#search-result .event-options a {
   color: #7d716d;
 }
 @media (max-width: 1023px) {
   #whatson .event-options .dropdown-item,
-#careers .event-options .dropdown-item {
+#careers .event-options .dropdown-item,
+#search-result .event-options .dropdown-item {
     padding: 1rem 1.5rem;
   }
 }
 #whatson .event-options .dropdown-item:hover,
-#careers .event-options .dropdown-item:hover {
+#careers .event-options .dropdown-item:hover,
+#search-result .event-options .dropdown-item:hover {
   background: none;
   color: #2c2d2d;
 }
 #whatson .event-options .dropdown-toggle:after,
-#careers .event-options .dropdown-toggle:after {
+#careers .event-options .dropdown-toggle:after,
+#search-result .event-options .dropdown-toggle:after {
   position: absolute;
   top: 40%;
   right: 4%;
 }
 #whatson .event-options input[value]#example-search-input,
-#careers .event-options input[value]#example-search-input {
+#careers .event-options input[value]#example-search-input,
+#search-result .event-options input[value]#example-search-input {
   font-size: 1.5rem;
   color: #7d716d;
   letter-spacing: 3px;
@@ -1233,24 +1274,28 @@ nav .mobile-search {
 }
 @media (max-width: 1023px) {
   #whatson .event-options input[value]#example-search-input,
-#careers .event-options input[value]#example-search-input {
+#careers .event-options input[value]#example-search-input,
+#search-result .event-options input[value]#example-search-input {
     font-size: 1.2rem;
   }
 }
 #whatson .event-options .input-group,
-#careers .event-options .input-group {
+#careers .event-options .input-group,
+#search-result .event-options .input-group {
   flex-wrap: nowrap;
   padding: 2.5% 0;
 }
 @media (max-width: 767px) {
   #whatson .event-options .input-group,
-#careers .event-options .input-group {
+#careers .event-options .input-group,
+#search-result .event-options .input-group {
     padding: 2% 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-options .input-group,
-#careers .event-options .input-group {
+#careers .event-options .input-group,
+#search-result .event-options .input-group {
     padding: 0;
     height: 40.78px;
   }
@@ -1258,29 +1303,36 @@ nav .mobile-search {
 #whatson .event-options .input-group .form-control,
 #whatson .event-options .input-group .btn,
 #careers .event-options .input-group .form-control,
-#careers .event-options .input-group .btn {
+#careers .event-options .input-group .btn,
+#search-result .event-options .input-group .form-control,
+#search-result .event-options .input-group .btn {
   border: none;
 }
 #whatson .event-options .input-group.date,
-#careers .event-options .input-group.date {
+#careers .event-options .input-group.date,
+#search-result .event-options .input-group.date {
   padding: 0;
 }
 #whatson .event-options .fas.fa-search:before,
-#careers .event-options .fas.fa-search:before {
+#careers .event-options .fas.fa-search:before,
+#search-result .event-options .fas.fa-search:before {
   color: #7d716d;
 }
 #whatson .col-12.expert,
-#careers .col-12.expert {
+#careers .col-12.expert,
+#search-result .col-12.expert {
   padding: 0 4px;
 }
 #whatson .expert-title,
-#careers .expert-title {
+#careers .expert-title,
+#search-result .expert-title {
   height: 50px;
   background: #a19996;
   color: #fff;
 }
 #whatson .expert-title h4,
-#careers .expert-title h4 {
+#careers .expert-title h4,
+#search-result .expert-title h4 {
   margin: 0;
   padding: 1% 2%;
   background: #8687c2;
@@ -1291,24 +1343,28 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .expert-title h4,
-#careers .expert-title h4 {
+#careers .expert-title h4,
+#search-result .expert-title h4 {
     width: 80%;
     padding: 2%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .expert-title h4,
-#careers .expert-title h4 {
+#careers .expert-title h4,
+#search-result .expert-title h4 {
     width: 65%;
     padding: 2%;
   }
 }
 #whatson .expert-image img,
-#careers .expert-image img {
+#careers .expert-image img,
+#search-result .expert-image img {
   width: 100%;
 }
 #whatson .expert-detail,
-#careers .expert-detail {
+#careers .expert-detail,
+#search-result .expert-detail {
   width: 100%;
   background: #2c2d2d;
   padding: 7% 6% 6% 7%;
@@ -1317,93 +1373,109 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .expert-detail,
-#careers .expert-detail {
+#careers .expert-detail,
+#search-result .expert-detail {
     height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .expert-detail,
-#careers .expert-detail {
+#careers .expert-detail,
+#search-result .expert-detail {
     height: 140px;
   }
 }
 #whatson .expert-detail h5,
-#careers .expert-detail h5 {
+#careers .expert-detail h5,
+#search-result .expert-detail h5 {
   font-family: "ITC Lubalin Graph Std";
   text-transform: uppercase;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .expert-detail h5,
-#careers .expert-detail h5 {
+#careers .expert-detail h5,
+#search-result .expert-detail h5 {
     max-height: 35px;
     font-size: initial;
   }
 }
 #whatson .expert-detail p,
-#careers .expert-detail p {
+#careers .expert-detail p,
+#search-result .expert-detail p {
   margin: 0;
   max-width: 220px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .expert-detail p,
-#careers .expert-detail p {
+#careers .expert-detail p,
+#search-result .expert-detail p {
     min-height: 33px;
   }
 }
 #whatson .expert-contact,
-#careers .expert-contact {
+#careers .expert-contact,
+#search-result .expert-contact {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 @media (max-width: 1023px) {
   #whatson .expert-contact,
-#careers .expert-contact {
+#careers .expert-contact,
+#search-result .expert-contact {
     flex-direction: row;
   }
 }
 #whatson .expert-contact svg,
-#careers .expert-contact svg {
+#careers .expert-contact svg,
+#search-result .expert-contact svg {
   fill: #7d716d;
   width: 30px;
   height: 30px;
 }
 @media (max-width: 1023px) {
   #whatson .expert-contact svg,
-#careers .expert-contact svg {
+#careers .expert-contact svg,
+#search-result .expert-contact svg {
     margin-top: 30%;
   }
 }
 #whatson .expert-contact svg:hover,
-#careers .expert-contact svg:hover {
+#careers .expert-contact svg:hover,
+#search-result .expert-contact svg:hover {
   fill: #a19996;
 }
 @media (max-width: 1023px) {
   #whatson .expert-contact svg.exp-ph,
-#careers .expert-contact svg.exp-ph {
+#careers .expert-contact svg.exp-ph,
+#search-result .expert-contact svg.exp-ph {
     padding-right: 40%;
     width: 40px;
   }
 }
 #whatson .event-detail-extension,
-#careers .event-detail-extension {
+#careers .event-detail-extension,
+#search-result .event-detail-extension {
   border: 1px solid #2c2d2d;
   padding: 1%;
   margin: 1% 0;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-detail-extension,
-#careers .event-detail-extension {
+#careers .event-detail-extension,
+#search-result .event-detail-extension {
     padding: 1% 3%;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-title,
-#careers .event-detail-extension .event-detail-extension-title {
+#careers .event-detail-extension .event-detail-extension-title,
+#search-result .event-detail-extension .event-detail-extension-title {
   background: #2d3b46;
   position: relative;
 }
 #whatson .event-detail-extension .event-detail-extension-title h2,
-#careers .event-detail-extension .event-detail-extension-title h2 {
+#careers .event-detail-extension .event-detail-extension-title h2,
+#search-result .event-detail-extension .event-detail-extension-title h2 {
   margin: 0;
   padding: 2% 2% 1% 2%;
   font-family: "ITC Lubalin Graph Std";
@@ -1412,12 +1484,14 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .event-detail-extension .event-detail-extension-title h2,
-#careers .event-detail-extension .event-detail-extension-title h2 {
+#careers .event-detail-extension .event-detail-extension-title h2,
+#search-result .event-detail-extension .event-detail-extension-title h2 {
     padding: 4% 2% 2% 4%;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-title i.fas.fa-times,
-#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times {
+#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times,
+#search-result .event-detail-extension .event-detail-extension-title i.fas.fa-times {
   position: absolute;
   right: 2%;
   top: 25%;
@@ -1426,33 +1500,39 @@ nav .mobile-search {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-detail-extension .event-detail-extension-title i.fas.fa-times,
-#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times {
+#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times,
+#search-result .event-detail-extension .event-detail-extension-title i.fas.fa-times {
     font-size: 1.25rem;
   }
 }
 @media (max-width: 767px) {
   #whatson .event-detail-extension .event-detail-extension-title i.fas.fa-times,
-#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times {
+#careers .event-detail-extension .event-detail-extension-title i.fas.fa-times,
+#search-result .event-detail-extension .event-detail-extension-title i.fas.fa-times {
     font-size: 1rem;
     right: 3%;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-images img,
-#careers .event-detail-extension .event-detail-extension-images img {
+#careers .event-detail-extension .event-detail-extension-images img,
+#search-result .event-detail-extension .event-detail-extension-images img {
   width: 100%;
 }
 #whatson .event-detail-extension .event-detail-extension-content,
-#careers .event-detail-extension .event-detail-extension-content {
+#careers .event-detail-extension .event-detail-extension-content,
+#search-result .event-detail-extension .event-detail-extension-content {
   padding: 0 4%;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #whatson .event-detail-extension .event-detail-extension-content,
-#careers .event-detail-extension .event-detail-extension-content {
+#careers .event-detail-extension .event-detail-extension-content,
+#search-result .event-detail-extension .event-detail-extension-content {
     padding: 0;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-content h3,
-#careers .event-detail-extension .event-detail-extension-content h3 {
+#careers .event-detail-extension .event-detail-extension-content h3,
+#search-result .event-detail-extension .event-detail-extension-content h3 {
   color: #7d716d;
   text-align: center;
   margin: 12% 0;
@@ -1460,7 +1540,8 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .event-detail-extension .event-detail-extension-content h3,
-#careers .event-detail-extension .event-detail-extension-content h3 {
+#careers .event-detail-extension .event-detail-extension-content h3,
+#search-result .event-detail-extension .event-detail-extension-content h3 {
     margin: 0 0 10% 0;
     font-size: 1.75rem;
     height: inherit;
@@ -1468,29 +1549,34 @@ nav .mobile-search {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-detail-extension .event-detail-extension-content h3,
-#careers .event-detail-extension .event-detail-extension-content h3 {
+#careers .event-detail-extension .event-detail-extension-content h3,
+#search-result .event-detail-extension .event-detail-extension-content h3 {
     font-size: 1.75rem;
     height: inherit;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-content p,
-#careers .event-detail-extension .event-detail-extension-content p {
+#careers .event-detail-extension .event-detail-extension-content p,
+#search-result .event-detail-extension .event-detail-extension-content p {
   color: #2c2d2d;
 }
 @media (max-width: 1023px) {
   #whatson .event-detail-extension .event-detail-extension-content p,
-#careers .event-detail-extension .event-detail-extension-content p {
+#careers .event-detail-extension .event-detail-extension-content p,
+#search-result .event-detail-extension .event-detail-extension-content p {
     padding: 1% 0;
   }
 }
 @media (max-width: 1023px) and (max-width: 767px) {
   #whatson .event-detail-extension .event-detail-extension-content p:first-child,
-#careers .event-detail-extension .event-detail-extension-content p:first-child {
+#careers .event-detail-extension .event-detail-extension-content p:first-child,
+#search-result .event-detail-extension .event-detail-extension-content p:first-child {
     padding-top: 10%;
   }
 }
 #whatson .event-detail-extension .event-detail-extension-content img.image-additional,
-#careers .event-detail-extension .event-detail-extension-content img.image-additional {
+#careers .event-detail-extension .event-detail-extension-content img.image-additional,
+#search-result .event-detail-extension .event-detail-extension-content img.image-additional {
   width: 100%;
   position: inherit;
   left: 0;
@@ -1498,14 +1584,16 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .event-detail-extension .event-detail-extension-content img.image-additional,
-#careers .event-detail-extension .event-detail-extension-content img.image-additional {
+#careers .event-detail-extension .event-detail-extension-content img.image-additional,
+#search-result .event-detail-extension .event-detail-extension-content img.image-additional {
     position: inherit;
     width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-detail-extension .event-detail-extension-content img.image-additional,
-#careers .event-detail-extension .event-detail-extension-content img.image-additional {
+#careers .event-detail-extension .event-detail-extension-content img.image-additional,
+#search-result .event-detail-extension .event-detail-extension-content img.image-additional {
     position: absolute;
     width: 95%;
     padding-left: 0;
@@ -1513,14 +1601,16 @@ nav .mobile-search {
   }
 }
 #whatson .event-buttons,
-#careers .event-buttons {
+#careers .event-buttons,
+#search-result .event-buttons {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
 @media (max-width: 767px) {
   #whatson .event-buttons,
-#careers .event-buttons {
+#careers .event-buttons,
+#search-result .event-buttons {
     padding: 0 5%;
     margin-top: 0;
     position: inherit;
@@ -1528,14 +1618,16 @@ nav .mobile-search {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons,
-#careers .event-buttons {
+#careers .event-buttons,
+#search-result .event-buttons {
     padding-right: 0;
     margin-top: 0;
     position: inherit;
   }
 }
 #whatson .event-buttons .button-detail-event,
-#careers .event-buttons .button-detail-event {
+#careers .event-buttons .button-detail-event,
+#search-result .event-buttons .button-detail-event {
   background: #2d3b46;
   padding: 1% 4%;
   height: 50px;
@@ -1545,14 +1637,16 @@ nav .mobile-search {
 }
 @media (max-width: 767px) {
   #whatson .event-buttons .button-detail-event,
-#careers .event-buttons .button-detail-event {
+#careers .event-buttons .button-detail-event,
+#search-result .event-buttons .button-detail-event {
     margin: 2% 0;
     padding: 0 0 0 4%;
   }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event,
-#careers .event-buttons .button-detail-event {
+#careers .event-buttons .button-detail-event,
+#search-result .event-buttons .button-detail-event {
     margin: 2% 0;
     width: 100%;
     padding: 0;
@@ -1561,20 +1655,23 @@ nav .mobile-search {
   }
 }
 #whatson .event-buttons .button-detail-event a,
-#careers .event-buttons .button-detail-event a {
+#careers .event-buttons .button-detail-event a,
+#search-result .event-buttons .button-detail-event a {
   text-decoration: none;
   color: #fff;
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event a,
-#careers .event-buttons .button-detail-event a {
+#careers .event-buttons .button-detail-event a,
+#search-result .event-buttons .button-detail-event a {
     flex-direction: column;
     justify-content: center;
   }
 }
 #whatson .event-buttons .button-detail-event i.fas,
-#careers .event-buttons .button-detail-event i.fas {
+#careers .event-buttons .button-detail-event i.fas,
+#search-result .event-buttons .button-detail-event i.fas {
   color: #8dd2cc;
   font-size: 1.5rem;
   margin: 0 5%;
@@ -1582,7 +1679,9 @@ nav .mobile-search {
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event i.fas.fa-calendar-alt, #whatson .event-buttons .button-detail-event i.fas.fa-share-alt,
 #careers .event-buttons .button-detail-event i.fas.fa-calendar-alt,
-#careers .event-buttons .button-detail-event i.fas.fa-share-alt {
+#careers .event-buttons .button-detail-event i.fas.fa-share-alt,
+#search-result .event-buttons .button-detail-event i.fas.fa-calendar-alt,
+#search-result .event-buttons .button-detail-event i.fas.fa-share-alt {
     font-size: 1.2rem;
     padding: 0;
     margin: 3%;
@@ -1590,7 +1689,8 @@ nav .mobile-search {
   }
 }
 #whatson .event-buttons .button-detail-event i.fas.fa-phone,
-#careers .event-buttons .button-detail-event i.fas.fa-phone {
+#careers .event-buttons .button-detail-event i.fas.fa-phone,
+#search-result .event-buttons .button-detail-event i.fas.fa-phone {
   background: #8dd2cc;
   padding: 3%;
   border-radius: 50%;
@@ -1607,7 +1707,8 @@ nav .mobile-search {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event i.fas.fa-phone,
-#careers .event-buttons .button-detail-event i.fas.fa-phone {
+#careers .event-buttons .button-detail-event i.fas.fa-phone,
+#search-result .event-buttons .button-detail-event i.fas.fa-phone {
     font-size: 0.75rem;
     padding: 3%;
     width: 20px;
@@ -1616,39 +1717,45 @@ nav .mobile-search {
   }
 }
 #whatson .event-buttons .button-detail-event img,
-#careers .event-buttons .button-detail-event img {
+#careers .event-buttons .button-detail-event img,
+#search-result .event-buttons .button-detail-event img {
   width: 18%;
   padding: 3%;
 }
 @media (min-width: 767px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event img,
-#careers .event-buttons .button-detail-event img {
+#careers .event-buttons .button-detail-event img,
+#search-result .event-buttons .button-detail-event img {
     padding: 0;
     width: 15%;
     margin: 3% 0;
   }
   #whatson .event-buttons .button-detail-event img.icon-larger,
-#careers .event-buttons .button-detail-event img.icon-larger {
+#careers .event-buttons .button-detail-event img.icon-larger,
+#search-result .event-buttons .button-detail-event img.icon-larger {
     width: 20%;
     margin: 0;
   }
 }
 #whatson .event-buttons .button-detail-event p,
-#careers .event-buttons .button-detail-event p {
+#careers .event-buttons .button-detail-event p,
+#search-result .event-buttons .button-detail-event p {
   margin: 0;
   color: #fff;
   letter-spacing: 1px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   #whatson .event-buttons .button-detail-event p,
-#careers .event-buttons .button-detail-event p {
+#careers .event-buttons .button-detail-event p,
+#search-result .event-buttons .button-detail-event p {
     font-size: 0.5rem;
     padding: 0;
   }
 }
 @media (max-width: 767px) {
   #whatson .event-buttons .button-detail-event p,
-#careers .event-buttons .button-detail-event p {
+#careers .event-buttons .button-detail-event p,
+#search-result .event-buttons .button-detail-event p {
     padding: 0;
   }
 }
@@ -2732,6 +2839,47 @@ footer p.text-footer__member {
   #gallery .gallery-container.mobile {
     display: none;
   }
+}
+
+#search-result .title-banner .title-top-banner {
+  position: absolute;
+  width: 145px;
+}
+#search-result .title-banner .title-top-banner__left {
+  left: 0;
+}
+#search-result .title-banner-text__left {
+  left: 5%;
+  width: 200px;
+}
+#search-result .search-container h4 {
+  color: #7d716d;
+  letter-spacing: 1.5px;
+}
+#search-result .search-container h4 span {
+  color: #8dd2cc;
+  font-style: italic;
+}
+#search-result .search-container .col-12.ol-margin {
+  padding-right: 0;
+}
+#search-result .search-container .col-12.ol-margin ol {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+}
+#search-result .search-container .col-12.ol-margin ol li {
+  color: #8dd2cc;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  list-style-position: inside;
+}
+#search-result .search-container .col-12.ol-margin ol p {
+  line-height: 1.7;
+}
+#search-result .search-container .col-12.ol-margin ol hr {
+  margin: 3% 0;
 }
 
 .col-md-4 {
