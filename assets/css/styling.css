@@ -148,6 +148,7 @@ nav a.nav-link {
 nav a.nav-link p {
   color: #fff;
   margin-bottom: 0;
+  font-size: 0.75rem;
 }
 @media (max-width: 767px) {
   nav a.nav-link p {
@@ -2739,8 +2740,9 @@ footer p.text-footer__member {
 }
 @media (max-width: 767px) {
   #gallery .gallery-title h4 img {
-    height: 95%;
-    margin-right: 5%;
+    height: 80%;
+    margin-right: 3%;
+    margin-left: 2%;
   }
 }
 #gallery .gallery-container {
@@ -2783,6 +2785,7 @@ footer p.text-footer__member {
   #gallery .gallery-container .gallery-desc p {
     margin-bottom: 1rem;
     padding-left: 0;
+    font-size: 70%;
   }
 }
 @media (max-width: 768px) {
@@ -2961,6 +2964,22 @@ footer p.text-footer__member {
 
 .active-svg {
   fill: #2c2d2d;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .ekko-lightbox-nav-overlay a {
+    font-size: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .ekko-lightbox-nav-overlay a span {
+    padding: 0 10px;
+  }
 }
 
 .slick-slide img {

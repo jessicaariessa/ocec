@@ -137,6 +137,7 @@ nav {
         p {
             color: #fff;
             margin-bottom: 0;
+            font-size: 0.75rem;
 
             @media (max-width: 767px) {
                 font-size: 1rem;
@@ -2663,8 +2664,9 @@ footer {
                 margin-right: 2%;
 
                 @media(max-width: 767px) {
-                    height: 95%;
-                    margin-right: 5%;
+                    height: 80%;
+                    margin-right: 3%;
+                    margin-left: 2%;
                 }
 
             }
@@ -2712,6 +2714,7 @@ footer {
             @media (max-width: 768px) {
                 margin-bottom: 1rem;
                 padding-left: 0;
+                font-size: 70%;
             }
         }
     }
@@ -2967,6 +2970,24 @@ footer {
 
 .active-svg {
     fill: #2c2d2d;
+}
+
+.modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.ekko-lightbox-nav-overlay a {
+    @media(max-width: 768px) {
+        font-size: 25px;
+    }
+
+    span {
+        @media(max-width: 768px) {
+            padding: 0 10px;
+        }
+    }
+
 }
 
 //end general
